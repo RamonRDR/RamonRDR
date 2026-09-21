@@ -52,6 +52,41 @@ I care about software that is not only able to run, but also able to be **unders
 
 ---
 
+## Selected impact
+
+- Reduced selected enterprise accounting routines from **30–40 minutes to ~3 minutes per company** through automation.
+- Helped remove **20+ person-hours of repetitive monthly work** across accounting operations.
+- Evolved an internal automation platform into a structured software product with **2,754 passing automated tests**, CI, controlled releases, recovery mechanisms, and documented architecture.
+- Built solutions that connect **Python, SAP ECC, SAP BPC/EPM, APIs, enterprise service workflows, filesystem operations, and evidence generation**.
+- Applied software engineering practices to operational finance problems where reliability, traceability, and safe failure behavior matter as much as speed.
+
+---
+
+## BAS architecture at a glance
+
+The diagram below is a **sanitized, high-level view** of the architecture. It intentionally excludes proprietary business rules, credentials, infrastructure details, and internal configuration.
+
+```mermaid
+flowchart LR
+    U[Accounting User] --> UI[Flet Desktop UI]
+    UI --> S[Application Services]
+
+    S --> SAP[SAP ECC]
+    S --> BPC[SAP BPC / EPM]
+    S --> API[APIs / ServiceNow]
+
+    SAP --> E[Evidence & Recovery]
+    BPC --> E
+    API --> E
+    S --> E
+
+    E --> O[Logs · Files · Audit Evidence]
+```
+
+The key design idea is to keep **business rules and orchestration outside the UI**, isolate integration concerns, and make execution recoverable and auditable.
+
+---
+
 ## Selected engineering work
 
 <table>
@@ -178,6 +213,21 @@ I tend to work from the problem outward:
 - use AI tools as engineering accelerators while keeping human review, testing, and accountability in the loop.
 
 That mindset comes from working on software where a "small script" can eventually become part of a real operational process.
+
+---
+
+## Education & languages
+
+**Education**
+
+- **B.Sc. in Computer Science — UNISOCIESC** · In progress
+- **Postgraduate specialization in Artificial Intelligence, Machine Learning & Big Data** · Completed in 2026
+
+**Languages**
+
+- **Portuguese:** Native
+- **English:** Intermediate
+- **Spanish:** Good comprehension
 
 ---
 
