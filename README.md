@@ -137,6 +137,8 @@ A production website built with <strong>Next.js 14, TypeScript, and Tailwind CSS
 The project includes local production builds, cPanel packaging, PM2 process configuration, server startup scripts, deployment documentation, and operational maintenance procedures.
 </p>
 
+<p><em>Source repository is private. The live website is publicly available below.</em></p>
+
 <p>
 <a href="https://manolocontabilidade.com.br"><strong>Visit live website →</strong></a>
 </p>
