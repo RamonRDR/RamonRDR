@@ -5,9 +5,9 @@
 <p>🎓 Postgraduate Specialization in AI, Machine Learning & Big Data Analytics</p>
 <p align="center"><strong>🌐 Choose your language</strong><br/><sub>Available in 3 languages</sub></p>
 <p align="center">
-  <a href="https://github.com/RamonRDR/RamonRDR/blob/main/README.md" title="English (default)"><img src="assets/badges/language-en.svg" alt="English (default), US flag colors" width="207" height="34" /></a>
-  <a href="https://github.com/RamonRDR/RamonRDR/blob/main/docs/README.pt-BR.md" title="Português (Brasil)"><img src="assets/badges/language-pt-br.svg" alt="Português, Brazilian flag colors" width="207" height="34" /></a>
-  <a href="https://github.com/RamonRDR/RamonRDR/blob/main/docs/README.es.md" title="Español"><img src="assets/badges/language-es.svg" alt="Español, Spanish flag colors" width="207" height="34" /></a>
+  <a href="https://github.com/RamonRDR/RamonRDR/blob/main/README.md" title="English (default)"><img src="assets/badges/language-en-v2.svg" alt="English (default), US flag colors" width="207" height="34" /></a>
+  <a href="https://github.com/RamonRDR/RamonRDR/blob/main/docs/README.pt-BR.md" title="Português (Brasil)"><img src="assets/badges/language-pt-br-v2.svg" alt="Português, Brazilian flag colors" width="207" height="34" /></a>
+  <a href="https://github.com/RamonRDR/RamonRDR/blob/main/docs/README.es.md" title="Español"><img src="assets/badges/language-es-v2.svg" alt="Español, Spanish flag colors" width="207" height="34" /></a>
 </p>
 <a href="https://www.linkedin.com/in/ramon-e-rodriguez/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn" /></a>
 <a href="https://ramonrodriguez.com.br"><img src="https://img.shields.io/badge/Portfolio-2668B7?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Portfolio" /></a>
