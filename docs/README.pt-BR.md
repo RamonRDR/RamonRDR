@@ -83,7 +83,7 @@ Atuo principalmente com **Python, APIs, integrações e automação**, além de 
 </td></tr>
 </table>
 
-### Arquitetura BAS (visão sanitizada)
+<h3 align="center">Arquitetura BAS (visão sanitizada)</h3>
 
 Três etapas de evolução de uma atividade contábil no ServiceNow/WBS. **Os tempos representam a intervenção humana por atividade**, não a duração total do processamento automático. O BAS continua executando rotinas SAP e gerando os arquivos mesmo sem uma pessoa operando a atividade.
 
@@ -183,10 +183,10 @@ flowchart LR
     class HANDOFF,DONE audit
 ~~~
 
-**Nota sobre os tempos:** Os **~3 minutos** da etapa final correspondem à conferência humana e ao encerramento da atividade. A execução via API, o processamento SAP e a geração e entrega de evidências continuam em background; não estamos atribuindo uma duração específica a essa execução.
+*Nota sobre os tempos: Os ~3 minutos da etapa final correspondem à conferência humana e ao encerramento da atividade. A execução via API, o processamento SAP e a geração e entrega de evidências continuam em background; não estamos atribuindo uma duração específica a essa execução.*
 ---
 
-## Fluxo de engenharia assistida por IA
+<h2 align="center">Fluxo de engenharia assistida por IA</h2>
 
 Processo iterativo **orquestrado por uma pessoa**: ferramentas de IA auxiliam implementação e revisão, verificações automatizadas validam mudanças e a integração exige decisão humana. Não implica comunicação autônoma e irrestrita entre agentes com código privado.
 
@@ -224,7 +224,7 @@ Os apontamentos do revisor são devolvidos ao agente de implementação para cor
 
 ---
 
-## Projetos públicos selecionados
+<h2 align="center">Projetos públicos selecionados</h2>
 
 O código público está nos links. Os badges refletem tecnologias realmente usadas; um adaptador opcional de IA não significa implantação real com modelo pago.
 
@@ -341,7 +341,7 @@ O código público está nos links. Os badges refletem tecnologias realmente usa
 
 ---
 
-## Websites e projetos complementares
+<h2 align="center">Websites e projetos complementares</h2>
 
 <table>
 <tr>
@@ -374,7 +374,7 @@ O código público está nos links. Os badges refletem tecnologias realmente usa
 
 ---
 
-## Como trabalho com engenharia
+<h2 align="center">Como trabalho com engenharia</h2>
 
 - Entender as regras de negócio antes de automatizar.
 
@@ -388,7 +388,7 @@ O código público está nos links. Os badges refletem tecnologias realmente usa
 
 ---
 
-## Formação e idiomas
+<h2 align="center">Formação e idiomas</h2>
 
 Pós-graduação · Inteligência Artificial, Data Science, Machine Learning & Big Data Analytics (UNISOCIESC, 2026).
 
@@ -397,7 +397,7 @@ Pós-graduação · Inteligência Artificial, Data Science, Machine Learning & B
 ---
 
 <div align="center">
-<h2>Vamos conversar</h2>
+<h2 align="center">Vamos conversar</h2>
 <p>Aberto a oportunidades internacionais remotas em Python backend, automação, IA aplicada e integrações corporativas.</p>
 <a href="https://www.linkedin.com/in/ramon-e-rodriguez/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn" /></a>
 <a href="https://ramonrodriguez.com.br"><img src="https://img.shields.io/badge/Portfolio-2668B7?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Portfolio" /></a>
