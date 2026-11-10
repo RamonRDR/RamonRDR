@@ -3,7 +3,17 @@
 <h3>Desarrollador de Software | Backend Python & APIs | Automatización | IA Aplicada & Agentes de IA</h3>
 <p><strong>Integraciones Empresariales (SAP) · CI/CD · Calidad de Software</strong></p>
 <p>🎓 Posgrado en IA, Machine Learning & Big Data Analytics</p>
-<p>[🇺🇸 English · Default](../README.md) · [🇧🇷 Português](README.pt-BR.md) · [🇪🇸 Español](README.es.md)</p>
+<p align="center">
+  <a href="https://github.com/RamonRDR/RamonRDR/blob/main/README.md" title="English (default)">
+    <img src="https://img.shields.io/badge/EN-English%20%28default%29-218A58?style=for-the-badge" alt="English (default)" />
+  </a>
+  <a href="https://github.com/RamonRDR/RamonRDR/blob/main/docs/README.pt-BR.md" title="Português (Brasil)">
+    <img src="https://img.shields.io/badge/BR-Portugu%C3%AAs-4B5563?style=for-the-badge" alt="Português" />
+  </a>
+  <a href="https://github.com/RamonRDR/RamonRDR/blob/main/docs/README.es.md" title="Español">
+    <img src="https://img.shields.io/badge/ES-Espa%C3%B1ol-4B5563?style=for-the-badge" alt="Español" />
+  </a>
+</p>
 <a href="https://www.linkedin.com/in/ramon-e-rodriguez/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn" /></a>
 <a href="https://ramonrodriguez.com.br"><img src="https://img.shields.io/badge/Portfolio-2668B7?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Portfolio" /></a>
 <a href="https://rdrlabs.com.br"><img src="https://img.shields.io/badge/RDR_Labs-175F78?style=for-the-badge&amp;logo=vercel&amp;logoColor=white" alt="RDR Labs" /></a>
