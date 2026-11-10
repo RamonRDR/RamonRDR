@@ -83,7 +83,7 @@ I work primarily with **Python, APIs, integrations, and automation**, while also
 </td></tr>
 </table>
 
-### BAS architecture (sanitized)
+<h3 align="center">BAS architecture (sanitized)</h3>
 
 Three successive ways of processing a ServiceNow/WBS accounting task. **The timings below represent active human work per task**, not total background processing time. The BAS continues executing SAP operations and generating deliverables even when nobody is manually handling the activity.
 
@@ -183,10 +183,10 @@ flowchart LR
     class HANDOFF,DONE audit
 ~~~
 
-**Measurement note:** The final **~3 minutes** reflects human verification and task closure. API execution, SAP processing, file generation and delivery continue in the background; no automated runtime is claimed here.
+*Measurement note: The final ~3 minutes reflects human verification and task closure. API execution, SAP processing, file generation and delivery continue in the background; no automated runtime is claimed here.*
 ---
 
-## AI-assisted engineering workflow
+<h2 align="center">AI-assisted engineering workflow</h2>
 
 An iterative, **human-orchestrated** process used in development: AI tools assist with implementation and review, automated checks verify changes, and a person decides when to integrate. This is not a claim of autonomous agents exchanging private code without oversight.
 
@@ -224,7 +224,7 @@ Review findings are routed back to the coding agent for corrections. After each 
 
 ---
 
-## Selected public projects
+<h2 align="center">Selected public projects</h2>
 
 Public source code is linked below. Badges reflect technologies implemented in each repository; an optional external AI adapter does not imply a live paid-model deployment.
 
@@ -341,7 +341,7 @@ Public source code is linked below. Badges reflect technologies implemented in e
 
 ---
 
-## Web delivery & additional projects
+<h2 align="center">Web delivery & additional projects</h2>
 
 <table>
 <tr>
@@ -374,7 +374,7 @@ Public source code is linked below. Badges reflect technologies implemented in e
 
 ---
 
-## How I approach engineering
+<h2 align="center">How I approach engineering</h2>
 
 - Understand business rules before automating them.
 
@@ -388,7 +388,7 @@ Public source code is linked below. Badges reflect technologies implemented in e
 
 ---
 
-## Education & languages
+<h2 align="center">Education & languages</h2>
 
 Postgraduate Specialization · Artificial Intelligence, Data Science, Machine Learning & Big Data Analytics (UNISOCIESC, 2026).
 
@@ -397,7 +397,7 @@ Postgraduate Specialization · Artificial Intelligence, Data Science, Machine Le
 ---
 
 <div align="center">
-<h2>Let's connect</h2>
+<h2 align="center">Let's connect</h2>
 <p>Open to remote international opportunities in backend Python, automation, applied AI and enterprise integrations.</p>
 <a href="https://www.linkedin.com/in/ramon-e-rodriguez/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn" /></a>
 <a href="https://ramonrodriguez.com.br"><img src="https://img.shields.io/badge/Portfolio-2668B7?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Portfolio" /></a>
