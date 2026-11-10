@@ -89,15 +89,32 @@ Arquitectura conceptual. Mostrar interfaces externas como diseño no implica que
 
 ~~~mermaid
 flowchart LR
-    USER["Accounting operations"] --> UI["Flet desktop UI"]
-    UI --> CORE["Application services & orchestration"]
-    CORE --> SAP["SAP ECC"]
+    USER["Operaciones contables"] --> UI["Interfaz Flet"]
+    UI --> CORE["Servicios Python de aplicación"]
+    CORE --> ECC["SAP ECC"]
     CORE --> BPC["SAP BPC / EPM"]
-    CORE -. "Interface design" .-> EXT["External services / WBS"]
-    CORE --> SAFE["Validation, evidence & recovery"]
-    SAP --> SAFE
+    CORE -. "Diseño de interfaz" .-> SN["ServiceNow"]
+    SN -->|"Orquesta los flujos WBS"| WBS["WBS platform"]
+    CORE --> SAFE["Validación, evidencias y recuperación"]
+    ECC --> SAFE
     BPC --> SAFE
-    SAFE --> LOG["Logs & audit evidence"]
+    SAFE --> LOG["Registros y evidencias de auditoría"]
+
+    classDef business fill:#1D4ED8,stroke:#93C5FD,color:#FFFFFF,stroke-width:1.5px
+    classDef interface fill:#0F766E,stroke:#99F6E4,color:#FFFFFF,stroke-width:1.5px
+    classDef service fill:#5B21B6,stroke:#C4B5FD,color:#FFFFFF,stroke-width:1.5px
+    classDef sap fill:#C2410C,stroke:#FDBA74,color:#FFFFFF,stroke-width:1.5px
+    classDef external fill:#166534,stroke:#86EFAC,color:#FFFFFF,stroke-width:1.5px
+    classDef safety fill:#9D174D,stroke:#F9A8D4,color:#FFFFFF,stroke-width:1.5px
+    classDef audit fill:#334155,stroke:#CBD5E1,color:#FFFFFF,stroke-width:1.5px
+
+    class USER business
+    class UI interface
+    class CORE service
+    class ECC,BPC sap
+    class SN,WBS external
+    class SAFE safety
+    class LOG audit
 ~~~
 
 La interfaz de escritorio está separada de los servicios de aplicación y de las integraciones SAP. La validación, las evidencias y la recuperación son elementos fundamentales.
@@ -109,14 +126,36 @@ La interfaz de escritorio está separada de los servicios de aplicación y de la
 Proceso iterativo **orquestado por una persona**: las herramientas de IA ayudan a implementar y revisar; los controles automatizados validan los cambios; la integración exige una decisión humana. No supone comunicación autónoma e irrestricta entre agentes con código privado.
 
 ~~~mermaid
-flowchart LR
-    REQ["Requirements & acceptance criteria"] --> CODE["Implementation: Codex / Claude Code"]
-    CODE --> QA["Tests, type checks & CI"]
-    QA --> REVIEW["Independent AI code review"]
-    REVIEW --> DEC{"Findings?"}
-    DEC -- "Yes" --> CODE
-    DEC -- "No" --> HUMAN["Human validation & merge"]
+flowchart TD
+    REQ["Requisitos y criterios de aceptación"] --> CODE["Agente de implementación: Claude Code / Codex"]
+    CODE --> QA["Controles: pruebas, lint, tipos y CI"]
+    QA --> REVIEW["Revisión independiente: Codex"]
+    REVIEW --> DECISION{"¿Hay hallazgos?"}
+    DECISION -->|"Sí"| FEEDBACK["Comentarios de revisión y correcciones"]
+    FEEDBACK -->|"Nueva implementación"| CODE
+    DECISION -->|"No"| HUMAN["Validación humana y autorización de merge"]
+    HUMAN --> MAIN["Rama main"]
+
+    classDef input fill:#1D4ED8,stroke:#93C5FD,color:#FFFFFF,stroke-width:1.5px
+    classDef coding fill:#6D28D9,stroke:#C4B5FD,color:#FFFFFF,stroke-width:1.5px
+    classDef checks fill:#0F766E,stroke:#99F6E4,color:#FFFFFF,stroke-width:1.5px
+    classDef review fill:#B45309,stroke:#FCD34D,color:#FFFFFF,stroke-width:1.5px
+    classDef decision fill:#9F1239,stroke:#FDA4AF,color:#FFFFFF,stroke-width:1.5px
+    classDef feedback fill:#7C3AED,stroke:#DDD6FE,color:#FFFFFF,stroke-width:1.5px
+    classDef human fill:#166534,stroke:#86EFAC,color:#FFFFFF,stroke-width:1.5px
+    classDef main fill:#334155,stroke:#CBD5E1,color:#FFFFFF,stroke-width:1.5px
+
+    class REQ input
+    class CODE coding
+    class QA checks
+    class REVIEW review
+    class DECISION decision
+    class FEEDBACK feedback
+    class HUMAN human
+    class MAIN main
 ~~~
+
+Los hallazgos del revisor vuelven al agente de implementación para su corrección. Después de cada cambio, se repiten las pruebas y la revisión independiente; la aprobación humana sigue siendo la etapa final.
 
 ---
 
