@@ -3,6 +3,7 @@
 <h3>Software Developer | Python Backend & API Engineering | Automation | Applied AI & AI Agents</h3>
 <p><strong>Enterprise Integrations (SAP) · CI/CD · Quality Engineering</strong></p>
 <p>🎓 Postgraduate Specialization in AI, Machine Learning & Big Data Analytics</p>
+<p align="center"><strong>🌐 Choose your language</strong><br/><sub>Available in 3 languages</sub></p>
 <p align="center">
   <a href="https://github.com/RamonRDR/RamonRDR/blob/main/README.md" title="English (default)"><img src="assets/badges/language-en.svg" alt="English (default), US flag colors" width="207" height="34" /></a>
   <a href="https://github.com/RamonRDR/RamonRDR/blob/main/docs/README.pt-BR.md" title="Português (Brasil)"><img src="assets/badges/language-pt-br.svg" alt="Português, Brazilian flag colors" width="207" height="34" /></a>
