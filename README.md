@@ -59,7 +59,7 @@ I work primarily with **Python, APIs, integrations, and automation**, while also
 
 **WEG S.A. | Accounting close milestone:** Helped address a longstanding accounting close challenge through process analysis and BAS-assisted automation. In the first month of BAS adoption, the accounting team completed the monthly close **27 minutes ahead of its target**; subsequent improvements brought that margin to **approximately two hours ahead of target**.
 
-- Reduced selected recurring accounting routines from **30–40 minutes to approximately 3 minutes per company**.
+- Reduced **active human work per accounting task** from roughly **30–40 minutes** (up to ~60 minutes for some companies) to **~10 minutes** with operator-run BAS, then **~3 minutes** for audit and closure after API-triggered background execution.
 
 - Helped remove approximately **20 person-hours of repetitive work** from an intercompany accounting workflow.
 
@@ -73,52 +73,117 @@ I work primarily with **Python, APIs, integrations, and automation**, while also
 <tr><td width="100%" valign="top">
 <h3 align="center">Business Accounting Suite (BAS)</h3>
 <p><img src="https://img.shields.io/badge/PRIVATE_%C2%B7_ENTERPRISE_CASE_STUDY-555555?style=flat-square" alt="PRIVATE · ENTERPRISE CASE STUDY" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Flet-02569B?style=flat-square&amp;logo=flutter&amp;logoColor=white" alt="Flet" /> <img src="https://img.shields.io/badge/SAP_ECC-0FAAFF?style=flat-square&amp;logo=sap&amp;logoColor=white" alt="SAP ECC" /> <img src="https://img.shields.io/badge/SAP_BPC_%2F_EPM-0FAAFF?style=flat-square&amp;logo=sap&amp;logoColor=white" alt="SAP BPC / EPM" /> <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&amp;logo=pytest&amp;logoColor=white" alt="pytest" /> <img src="https://img.shields.io/badge/GitLab_CI-FC6D26?style=flat-square&amp;logo=gitlab&amp;logoColor=white" alt="GitLab CI" /> <img src="https://img.shields.io/badge/SDD-586D8C?style=flat-square" alt="SDD" /> <img src="https://img.shields.io/badge/CI%2FCD-2088FF?style=flat-square" alt="CI/CD" /></p>
-<p>**Developed at WEG S.A.** WEG is a Brazilian multinational headquartered in Jaraguá do Sul, Santa Catarina, and [one of the world's largest electric motor manufacturers](https://www.weg.net/institutional/RW/en/this-is-weg). This work combined firsthand accounting-domain knowledge with software engineering to address recurring operational bottlenecks.</p>
-<p>A modular desktop application for accounting operations, integrating reusable Python services, SAP workflows, validated execution, automated quality gates, evidence generation, and recovery mechanisms.</p>
+<p><strong>Developed at WEG S.A.</strong> WEG is a Brazilian multinational headquartered in Jaraguá do Sul, Santa Catarina, and <a href="https://www.weg.net/institutional/RW/en/this-is-weg">one of the world's largest electric motor manufacturers</a>. This work combined firsthand accounting-domain knowledge with software engineering to address recurring operational bottlenecks.</p>
+<p>A modular Python accounting automation solution that evolved from a Flet desktop interface to API-triggered background execution, integrating SAP workflows, automated evidence generation, validation, logging and recovery.</p>
 <p><strong>27 min ahead</strong> · Accounting close target in the first month of BAS adoption<br/>
 <strong>~2h ahead</strong> · Accounting close target after subsequent improvements<br/><strong>2,754</strong> · Passing tests in documented CI baseline<br/>
 <strong>~20h</strong> · Manual work reduced in a selected routine<br/>
-<strong>~3 min</strong> · Process time reduced from 30–40 min to ~3 min</p>
+<strong>30–40 → ~10 → ~3 min</strong> · Human handling time per task across three stages (manual → BAS-assisted → API-triggered)</p>
 <p><em>Source code and proprietary business details are private. Only non-sensitive architecture and engineering outcomes are described here.</em></p>
 </td></tr>
 </table>
 
 ### BAS architecture (sanitized)
 
-Conceptual architecture only. External service connections shown as interface design must not be interpreted as proof of a production integration.
+Three successive ways of processing a ServiceNow/WBS accounting task. **The timings below represent active human work per task**, not total background processing time. The BAS continues executing SAP operations and generating deliverables even when nobody is manually handling the activity.
+
+| Stage | Human handling per task | Execution model |
+| --- | ---: | --- |
+| 1. Before BAS | **30–40 min**, sometimes ~60 min | Manual accounting work and evidence collection |
+| 2. Operator-run BAS | **~10 min** | BAS automates SAP and artifacts; human uploads evidence |
+| 3. ServiceNow + API + BAS | **~3 min** | API-triggered background work; human audits and closes |
+
+#### Phase 1 · Fully manual workflow
+
+A person takes the ServiceNow task, performs the SAP postings and values manually, creates Excel/PDF files, logs and screenshots, saves the evidence on the network, uploads artifacts and folder links to ServiceNow, and closes the task.
 
 ~~~mermaid
 flowchart LR
-    USER["Accounting operations"] --> UI["Flet desktop UI"]
-    UI --> CORE["Python application services"]
-    CORE --> ECC["SAP ECC"]
-    CORE --> BPC["SAP BPC / EPM"]
-    CORE -. "Interface design" .-> SN["ServiceNow"]
-    SN -->|"Orchestrates WBS workflows"| WBS["WBS platform"]
-    CORE --> SAFE["Validation, evidence & recovery"]
-    ECC --> SAFE
-    BPC --> SAFE
-    SAFE --> LOG["Logs & audit evidence"]
+    SN["ServiceNow / WBS task"]
+    STEP["Open SAP & post values"]
+    EXEC["Excel / PDF, logs & screenshots"]
+    FILES["Save evidence on network"]
+    HANDOFF["Upload files, prints & folder links"]
+    DONE["Close task in ServiceNow"]
+    SN --> STEP
+    STEP --> EXEC
+    EXEC --> FILES
+    FILES --> HANDOFF
+    HANDOFF --> DONE
 
-    classDef business fill:#1D4ED8,stroke:#93C5FD,color:#FFFFFF,stroke-width:1.5px
-    classDef interface fill:#0F766E,stroke:#99F6E4,color:#FFFFFF,stroke-width:1.5px
-    classDef service fill:#5B21B6,stroke:#C4B5FD,color:#FFFFFF,stroke-width:1.5px
-    classDef sap fill:#C2410C,stroke:#FDBA74,color:#FFFFFF,stroke-width:1.5px
-    classDef external fill:#166534,stroke:#86EFAC,color:#FFFFFF,stroke-width:1.5px
-    classDef safety fill:#9D174D,stroke:#F9A8D4,color:#FFFFFF,stroke-width:1.5px
-    classDef audit fill:#334155,stroke:#CBD5E1,color:#FFFFFF,stroke-width:1.5px
+    classDef serviceNow fill:#075985,stroke:#7DD3FC,color:#FFFFFF,stroke-width:1.5px
+    classDef human fill:#1D4ED8,stroke:#93C5FD,color:#FFFFFF,stroke-width:1.5px
+    classDef execution fill:#6D28D9,stroke:#C4B5FD,color:#FFFFFF,stroke-width:1.5px
+    classDef evidence fill:#B45309,stroke:#FCD34D,color:#FFFFFF,stroke-width:1.5px
+    classDef audit fill:#166534,stroke:#86EFAC,color:#FFFFFF,stroke-width:1.5px
 
-    class USER business
-    class UI interface
-    class CORE service
-    class ECC,BPC sap
-    class SN,WBS external
-    class SAFE safety
-    class LOG audit
+    class SN serviceNow
+    class STEP,EXEC human
+    class FILES,HANDOFF evidence
+    class DONE audit
 ~~~
 
-The desktop interface is kept separate from application services and SAP integrations. Validation, evidence and recovery are first-class concerns.
+#### Phase 2 · BAS-assisted execution
 
+ServiceNow still assigns the task to the queue. A person opens BAS and starts the run. BAS handles SAP entries, file creation, screenshots, logs and network evidence; the person then attaches the generated results in ServiceNow and closes the task.
+
+~~~mermaid
+flowchart LR
+    SN["ServiceNow / WBS task queue"]
+    STEP["Human starts BAS"]
+    EXEC["BAS executes SAP postings"]
+    FILES["BAS generates reports, prints & logs"]
+    HANDOFF["Human attaches outputs to ServiceNow"]
+    DONE["Close task"]
+    SN --> STEP
+    STEP --> EXEC
+    EXEC --> FILES
+    FILES --> HANDOFF
+    HANDOFF --> DONE
+
+    classDef serviceNow fill:#075985,stroke:#7DD3FC,color:#FFFFFF,stroke-width:1.5px
+    classDef human fill:#1D4ED8,stroke:#93C5FD,color:#FFFFFF,stroke-width:1.5px
+    classDef execution fill:#6D28D9,stroke:#C4B5FD,color:#FFFFFF,stroke-width:1.5px
+    classDef evidence fill:#B45309,stroke:#FCD34D,color:#FFFFFF,stroke-width:1.5px
+    classDef audit fill:#166534,stroke:#86EFAC,color:#FFFFFF,stroke-width:1.5px
+
+    class SN serviceNow
+    class STEP,HANDOFF human
+    class EXEC,FILES execution
+    class DONE audit
+~~~
+
+#### Phase 3 · API-triggered background execution
+
+ServiceNow triggers BAS through an API. BAS executes the SAP and evidence workflow in the background and makes the outputs available in ServiceNow. Only then does the task enter the human queue for an audit of the generated files and final closure.
+
+~~~mermaid
+flowchart LR
+    SN["ServiceNow / WBS task"]
+    STEP["ServiceNow calls BAS API"]
+    EXEC["BAS runs SAP work in background"]
+    FILES["BAS creates & submits evidence"]
+    HANDOFF["Task queued for human audit"]
+    DONE["Human checks files & closes"]
+    SN --> STEP
+    STEP --> EXEC
+    EXEC --> FILES
+    FILES --> HANDOFF
+    HANDOFF --> DONE
+
+    classDef serviceNow fill:#075985,stroke:#7DD3FC,color:#FFFFFF,stroke-width:1.5px
+    classDef human fill:#1D4ED8,stroke:#93C5FD,color:#FFFFFF,stroke-width:1.5px
+    classDef execution fill:#6D28D9,stroke:#C4B5FD,color:#FFFFFF,stroke-width:1.5px
+    classDef evidence fill:#B45309,stroke:#FCD34D,color:#FFFFFF,stroke-width:1.5px
+    classDef audit fill:#166534,stroke:#86EFAC,color:#FFFFFF,stroke-width:1.5px
+
+    class SN serviceNow
+    class STEP,EXEC execution
+    class FILES evidence
+    class HANDOFF,DONE audit
+~~~
+
+**Measurement note:** The final **~3 minutes** reflects human verification and task closure. API execution, SAP processing, file generation and delivery continue in the background; no automated runtime is claimed here.
 ---
 
 ## AI-assisted engineering workflow
@@ -126,7 +191,7 @@ The desktop interface is kept separate from application services and SAP integra
 An iterative, **human-orchestrated** process used in development: AI tools assist with implementation and review, automated checks verify changes, and a person decides when to integrate. This is not a claim of autonomous agents exchanging private code without oversight.
 
 ~~~mermaid
-flowchart TD
+flowchart LR
     REQ["Requirements & acceptance criteria"] --> CODE["Coding agent: Claude Code / Codex"]
     CODE --> QA["Automated checks: tests, lint, types & CI"]
     QA --> REVIEW["Independent Codex review"]
