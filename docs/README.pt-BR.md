@@ -183,7 +183,7 @@ flowchart LR
     class HANDOFF,DONE audit
 ~~~
 
-*Nota sobre os tempos: Os ~3 minutos da etapa final correspondem à conferência humana e ao encerramento da atividade. A execução via API, o processamento SAP e a geração e entrega de evidências continuam em background; não estamos atribuindo uma duração específica a essa execução.*
+<p><small><em>Nota sobre os tempos: Os ~3 minutos da etapa final correspondem à conferência humana e ao encerramento da atividade. A execução via API, o processamento SAP e a geração e entrega de evidências continuam em background; não estamos atribuindo uma duração específica a essa execução.</em></small></p>
 ---
 
 <h2 align="center">Fluxo de engenharia assistida por IA</h2>
@@ -228,7 +228,7 @@ Os apontamentos do revisor são devolvidos ao agente de implementação para cor
 
 O código público está nos links. Os badges refletem tecnologias realmente usadas; um adaptador opcional de IA não significa implantação real com modelo pago.
 
-### Backend & APIs
+<h3 align="center">Backend & APIs</h3>
 
 <table>
 <tr>
@@ -249,7 +249,7 @@ O código público está nos links. Os badges refletem tecnologias realmente usa
 </tr>
 </table>
 
-### Automação e ferramentas para desenvolvedores
+<h3 align="center">Automação e ferramentas para desenvolvedores</h3>
 
 <table>
 <tr>
@@ -270,7 +270,7 @@ O código público está nos links. Os badges refletem tecnologias realmente usa
 </tr>
 </table>
 
-### IA aplicada, RAG e integrações com agentes
+<h3 align="center">IA aplicada, RAG e integrações com agentes</h3>
 
 <table>
 <tr>
