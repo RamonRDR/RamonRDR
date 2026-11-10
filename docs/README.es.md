@@ -83,7 +83,7 @@ Trabajo principalmente con **Python, APIs, integraciones y automatización**, ad
 </td></tr>
 </table>
 
-### Arquitectura BAS (vista simplificada y segura)
+<h3 align="center">Arquitectura BAS (vista simplificada y segura)</h3>
 
 Tres etapas de evolución de una tarea contable en ServiceNow/WBS. **Los tiempos representan la intervención humana por tarea**, no la duración total del procesamiento automático. BAS continúa ejecutando operaciones SAP y generando archivos sin intervención manual.
 
@@ -183,10 +183,10 @@ flowchart LR
     class HANDOFF,DONE audit
 ~~~
 
-**Nota sobre los tiempos:** Los **~3 minutos** de la etapa final corresponden a la verificación humana y al cierre de la tarea. La ejecución por API, el procesamiento SAP y la generación y entrega de evidencias siguen en segundo plano; no se afirma una duración concreta para ese procesamiento.
+*Nota sobre los tiempos: Los ~3 minutos de la etapa final corresponden a la verificación humana y al cierre de la tarea. La ejecución por API, el procesamiento SAP y la generación y entrega de evidencias siguen en segundo plano; no se afirma una duración concreta para ese procesamiento.*
 ---
 
-## Flujo de ingeniería asistida por IA
+<h2 align="center">Flujo de ingeniería asistida por IA</h2>
 
 Proceso iterativo **orquestado por una persona**: las herramientas de IA ayudan a implementar y revisar; los controles automatizados validan los cambios; la integración exige una decisión humana. No supone comunicación autónoma e irrestricta entre agentes con código privado.
 
@@ -224,7 +224,7 @@ Los hallazgos del revisor vuelven al agente de implementación para su correcci�
 
 ---
 
-## Proyectos públicos seleccionados
+<h2 align="center">Proyectos públicos seleccionados</h2>
 
 El código público está enlazado. Las insignias reflejan tecnologías realmente utilizadas; un adaptador de IA opcional no significa un despliegue real con un modelo de pago.
 
@@ -341,7 +341,7 @@ El código público está enlazado. Las insignias reflejan tecnologías realment
 
 ---
 
-## Websites y proyectos adicionales
+<h2 align="center">Websites y proyectos adicionales</h2>
 
 <table>
 <tr>
@@ -374,7 +374,7 @@ El código público está enlazado. Las insignias reflejan tecnologías realment
 
 ---
 
-## Cómo abordo la ingeniería
+<h2 align="center">Cómo abordo la ingeniería</h2>
 
 - Entender las reglas de negocio antes de automatizarlas.
 
@@ -388,7 +388,7 @@ El código público está enlazado. Las insignias reflejan tecnologías realment
 
 ---
 
-## Formación e idiomas
+<h2 align="center">Formación e idiomas</h2>
 
 Posgrado · Inteligencia Artificial, Ciencia de Datos, Machine Learning & Big Data Analytics (UNISOCIESC, 2026).
 
@@ -397,7 +397,7 @@ Posgrado · Inteligencia Artificial, Ciencia de Datos, Machine Learning & Big Da
 ---
 
 <div align="center">
-<h2>Conectemos</h2>
+<h2 align="center">Conectemos</h2>
 <p>Disponible para oportunidades internacionales remotas en Python backend, automatización, IA aplicada e integraciones empresariales.</p>
 <a href="https://www.linkedin.com/in/ramon-e-rodriguez/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn" /></a>
 <a href="https://ramonrodriguez.com.br"><img src="https://img.shields.io/badge/Portfolio-2668B7?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Portfolio" /></a>
