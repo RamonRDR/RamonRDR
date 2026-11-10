@@ -3,6 +3,7 @@
 <h3>Desarrollador de Software | Backend Python & APIs | Automatización | IA Aplicada & Agentes de IA</h3>
 <p><strong>Integraciones Empresariales (SAP) · CI/CD · Calidad de Software</strong></p>
 <p>🎓 Posgrado en IA, Machine Learning & Big Data Analytics</p>
+<p align="center"><strong>🌐 Elige tu idioma</strong><br/><sub>Disponible en 3 idiomas</sub></p>
 <p align="center">
   <a href="https://github.com/RamonRDR/RamonRDR/blob/main/README.md" title="English (default)"><img src="../assets/badges/language-en.svg" alt="English (default), US flag colors" width="207" height="34" /></a>
   <a href="https://github.com/RamonRDR/RamonRDR/blob/main/docs/README.pt-BR.md" title="Português (Brasil)"><img src="../assets/badges/language-pt-br.svg" alt="Português, Brazilian flag colors" width="207" height="34" /></a>
