@@ -72,8 +72,9 @@ I work primarily with **Python, APIs, integrations, and automation**, while also
 <table>
 <tr><td width="100%" valign="top">
 <h3 align="center">Business Accounting Suite (BAS)</h3>
-<p><img src="https://img.shields.io/badge/PRIVATE_%C2%B7_ENTERPRISE_CASE_STUDY-555555?style=flat-square" alt="PRIVATE · ENTERPRISE CASE STUDY" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Flet-02569B?style=flat-square&amp;logo=flutter&amp;logoColor=white" alt="Flet" /> <img src="https://img.shields.io/badge/SAP_ECC-0FAAFF?style=flat-square&amp;logo=sap&amp;logoColor=white" alt="SAP ECC" /> <img src="https://img.shields.io/badge/SAP_BPC_%2F_EPM-0FAAFF?style=flat-square&amp;logo=sap&amp;logoColor=white" alt="SAP BPC / EPM" /> <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&amp;logo=pytest&amp;logoColor=white" alt="pytest" /> <img src="https://img.shields.io/badge/GitLab_CI-FC6D26?style=flat-square&amp;logo=gitlab&amp;logoColor=white" alt="GitLab CI" /> <img src="https://img.shields.io/badge/SDD-586D8C?style=flat-square" alt="SDD" /> <img src="https://img.shields.io/badge/CI%2FCD-2088FF?style=flat-square" alt="CI/CD" /></p>
+<p><img src="https://img.shields.io/badge/PRIVATE_%C2%B7_ADOPTED_ENTERPRISE_TOOL-555555?style=flat-square" alt="PRIVATE · ADOPTED ENTERPRISE TOOL" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Flet-02569B?style=flat-square&amp;logo=flutter&amp;logoColor=white" alt="Flet" /> <img src="https://img.shields.io/badge/SAP_ECC-0FAAFF?style=flat-square&amp;logo=sap&amp;logoColor=white" alt="SAP ECC" /> <img src="https://img.shields.io/badge/SAP_BPC_%2F_EPM-0FAAFF?style=flat-square&amp;logo=sap&amp;logoColor=white" alt="SAP BPC / EPM" /> <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&amp;logo=pytest&amp;logoColor=white" alt="pytest" /> <img src="https://img.shields.io/badge/GitLab_CI-FC6D26?style=flat-square&amp;logo=gitlab&amp;logoColor=white" alt="GitLab CI" /> <img src="https://img.shields.io/badge/SDD-586D8C?style=flat-square" alt="SDD" /> <img src="https://img.shields.io/badge/CI%2FCD-2088FF?style=flat-square" alt="CI/CD" /></p>
 <p><strong>Developed at WEG S.A.</strong> WEG is a Brazilian multinational headquartered in Jaraguá do Sul, Santa Catarina, and <a href="https://www.weg.net/institutional/RW/en/this-is-weg">one of the world's largest electric motor manufacturers</a>. This work combined firsthand accounting-domain knowledge with software engineering to address recurring operational bottlenecks.</p>
+<p><strong>Validated and adopted at WEG.</strong> BAS was built as a real internal accounting automation tool, underwent the organization's approval process and became part of its operational workflow. It continued to be used after my departure. Later extensions may build on that foundation, but no internal roadmap is claimed here.</p>
 <p>A modular Python accounting automation solution that evolved from a Flet desktop interface to API-triggered background execution, integrating SAP workflows, automated evidence generation, validation, logging and recovery.</p>
 <p><strong>27 min ahead</strong> · Accounting close target in the first month of BAS adoption<br/>
 <strong>~2h ahead</strong> · Accounting close target after subsequent improvements<br/><strong>2,754</strong> · Passing tests in documented CI baseline<br/>
@@ -184,7 +185,8 @@ flowchart LR
 ~~~
 
 <p><small><em>Measurement note: The final ~3 minutes reflects human verification and task closure. API execution, SAP processing, file generation and delivery continue in the background; no automated runtime is claimed here.</em></small></p>
----
+
+<hr />
 
 <h2 align="center">AI-assisted engineering workflow</h2>
 
