@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="207" height="34" viewBox="0 0 207 34" role="img" aria-label="Português do Brasil: Português">
+<title>Português do Brasil: Português</title>
+<defs><clipPath id="clip"><rect width="207" height="34" rx="6"/></clipPath></defs>
+<g clip-path="url(#clip)">
+<rect width="207" height="34" fill="#202832"/>
+<rect width="50" height="34" fill="#009B3A"/>
+<polygon points="25,3 46,17 25,31 4,17" fill="#FFDF00"/>
+<circle cx="25" cy="17" r="9.5" fill="#002776"/>
+<path d="M16 15 Q25 10 34 17" fill="none" stroke="#fff" stroke-width="2"/>
+<rect x="50" y="0" width="1" height="31" fill="#475569"/>
+<text x="62" y="21.2" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="600">Português</text>
+<rect x="50" y="31" width="52.4" height="3" fill="#009B3A"/>
+<rect x="102.4" y="31" width="52.4" height="3" fill="#FFDF00"/>
+<rect x="154.8" y="31" width="52.2" height="3" fill="#002776"/>
+</g>
+<rect x="0.5" y="0.5" width="206" height="33" rx="5.5" fill="none" stroke="#475569"/>
+</svg>
