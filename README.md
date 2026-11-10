@@ -1,201 +1,263 @@
 <div align="center">
-
-# Ramon Rodriguez
-
-### Software Developer · Python · Automation · APIs · SAP · AI & Data
-
-I build reliable software that turns complex business processes into maintainable, testable automation.
-
-**Brazil · Open to remote international opportunities**
-
-<a href="https://www.linkedin.com/in/ramon-e-rodriguez/">
-  <img src="https://img.shields.io/badge/LinkedIn-Ramon%20Rodriguez-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-</a>
-<a href="https://github.com/RamonRDR">
-  <img src="https://img.shields.io/badge/GitHub-RamonRDR-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-</a>
-
+<h1>Ramon Rodriguez</h1>
+<h3>Software Developer | Python Backend & API Engineering | Automation | Applied AI & AI Agents</h3>
+<p><strong>Enterprise Integrations (SAP) · CI/CD · Quality Engineering</strong></p>
+<p>🎓 Postgraduate Specialization in AI, Machine Learning & Big Data Analytics</p>
+<p>[🇺🇸 English · Default](README.md) · [🇧🇷 Português](docs/README.pt-BR.md) · [🇪🇸 Español](docs/README.es.md)</p>
+<a href="https://www.linkedin.com/in/ramon-e-rodriguez/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn" /></a>
+<a href="https://ramonrodriguez.com.br"><img src="https://img.shields.io/badge/Portfolio-2668B7?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Portfolio" /></a>
+<a href="https://rdrlabs.com.br"><img src="https://img.shields.io/badge/RDR_Labs-175F78?style=for-the-badge&amp;logo=vercel&amp;logoColor=white" alt="RDR Labs" /></a>
+<a href="https://github.com/RamonRDR"><img src="https://img.shields.io/badge/GitHub-24292F?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub" /></a>
 </div>
 
 ---
 
 ## About me
 
-My background sits at the intersection of **software engineering, automation, enterprise systems, and accounting domain expertise**.
+I develop software at the intersection of **backend engineering, enterprise automation, and applied AI**. My work turns complex workflows into maintainable systems with testing, traceability, controlled releases, and thoughtful failure recovery.
 
-I started by solving real operational problems and gradually turned those solutions into structured software: reusable modules, SAP automations, API integrations, desktop applications, CI pipelines, automated tests, technical documentation, and production-oriented recovery flows.
-
-Today, my main focus is **Python development, backend and API engineering, AI-assisted software development, automation, and quality-oriented engineering**.
-
-I care about software that is not only able to run, but also able to be **understood, tested, reviewed, recovered, and maintained**.
+I work primarily with **Python, APIs, integrations, and automation**, while also building full-stack and agent-enabled applications. Private enterprise work is presented only through sanitized, high-level descriptions.
 
 ---
 
 ## Engineering toolbox
 
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go" />
-  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white" alt="SQL" />
-  <img src="https://img.shields.io/badge/REST%20APIs-005571?style=flat-square" alt="REST APIs" />
-  <img src="https://img.shields.io/badge/SAP%20ECC%20%2F%20BPC-0FAAFF?style=flat-square&logo=sap&logoColor=white" alt="SAP ECC / BPC" />
-  <img src="https://img.shields.io/badge/Flet-02569B?style=flat-square" alt="Flet" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
-  <img src="https://img.shields.io/badge/GitLab%20CI-FC6D26?style=flat-square&logo=gitlab&logoColor=white" alt="GitLab CI" />
-</p>
+Technologies and practices demonstrated across enterprise work and public repositories. Categories describe experience, not self-assigned proficiency rankings.
 
-**What I usually work on:** business automation · backend services · APIs · SAP integration · desktop tools · testing · CI/CD · technical documentation · AI-assisted engineering
+### Languages, backend & frameworks
+
+<p><img src="https://img.shields.io/badge/Python_3.14-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python 3.14" /> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&amp;logo=fastapi&amp;logoColor=white" alt="FastAPI" /> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&amp;logo=typescript&amp;logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&amp;logo=go&amp;logoColor=white" alt="Go" /> <img src="https://img.shields.io/badge/React-149ECA?style=flat-square&amp;logo=react&amp;logoColor=white" alt="React" /> <img src="https://img.shields.io/badge/Next.js-111111?style=flat-square&amp;logo=nextdotjs&amp;logoColor=white" alt="Next.js" /> <img src="https://img.shields.io/badge/Pydantic_v2-E92063?style=flat-square&amp;logo=pydantic&amp;logoColor=white" alt="Pydantic v2" /> <img src="https://img.shields.io/badge/REST_APIs-276DAE?style=flat-square" alt="REST APIs" /> <img src="https://img.shields.io/badge/OpenAPI-6BA539?style=flat-square&amp;logo=swagger&amp;logoColor=white" alt="OpenAPI" /> <img src="https://img.shields.io/badge/Uvicorn-4051B5?style=flat-square" alt="Uvicorn" /> <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&amp;logo=nodedotjs&amp;logoColor=white" alt="Node.js" /></p>
+
+### Databases, data & retrieval
+
+<p><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&amp;logo=postgresql&amp;logoColor=white" alt="PostgreSQL" /> <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&amp;logo=sqlite&amp;logoColor=white" alt="SQLite" /> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&amp;logo=redis&amp;logoColor=white" alt="Redis" /> <img src="https://img.shields.io/badge/SQLAlchemy_2-D71F00?style=flat-square&amp;logo=sqlalchemy&amp;logoColor=white" alt="SQLAlchemy 2" /> <img src="https://img.shields.io/badge/Alembic-555555?style=flat-square" alt="Alembic" /> <img src="https://img.shields.io/badge/psycopg_3-4169E1?style=flat-square" alt="psycopg 3" /> <img src="https://img.shields.io/badge/pgvector-4877B8?style=flat-square" alt="pgvector" /> <img src="https://img.shields.io/badge/SQL-336791?style=flat-square&amp;logo=postgresql&amp;logoColor=white" alt="SQL" /> <img src="https://img.shields.io/badge/RAG-6956C4?style=flat-square" alt="RAG" /> <img src="https://img.shields.io/badge/Hybrid_Search-6A5ACD?style=flat-square" alt="Hybrid Search" /> <img src="https://img.shields.io/badge/Structured_Outputs-7755AD?style=flat-square" alt="Structured Outputs" /></p>
+
+### Automation & enterprise integration
+
+<p><img src="https://img.shields.io/badge/SAP_ECC-0FAAFF?style=flat-square&amp;logo=sap&amp;logoColor=white" alt="SAP ECC" /> <img src="https://img.shields.io/badge/SAP_BPC_%2F_EPM-0FAAFF?style=flat-square&amp;logo=sap&amp;logoColor=white" alt="SAP BPC / EPM" /> <img src="https://img.shields.io/badge/Flet-02569B?style=flat-square&amp;logo=flutter&amp;logoColor=white" alt="Flet" /> <img src="https://img.shields.io/badge/ServiceNow_%2F_WBS-2E7655?style=flat-square" alt="ServiceNow / WBS" /> <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&amp;logo=playwright&amp;logoColor=white" alt="Playwright" /> <img src="https://img.shields.io/badge/Typer-7952B3?style=flat-square" alt="Typer" /> <img src="https://img.shields.io/badge/httpx-5165B6?style=flat-square" alt="httpx" /> <img src="https://img.shields.io/badge/Model_Context_Protocol-6740A6?style=flat-square" alt="Model Context Protocol" /> <img src="https://img.shields.io/badge/GitHub_REST_API-30363D?style=flat-square&amp;logo=github&amp;logoColor=white" alt="GitHub REST API" /> <img src="https://img.shields.io/badge/Desktop_Automation-47618B?style=flat-square" alt="Desktop Automation" /></p>
+
+### AI-assisted & agentic engineering
+
+<p><img src="https://img.shields.io/badge/ChatGPT-0D9488?style=flat-square&amp;logo=openai&amp;logoColor=white" alt="ChatGPT" /> <img src="https://img.shields.io/badge/ChatGPT_Work-0F766E?style=flat-square&amp;logo=openai&amp;logoColor=white" alt="ChatGPT Work" /> <img src="https://img.shields.io/badge/Codex-505E76?style=flat-square&amp;logo=openai&amp;logoColor=white" alt="Codex" /> <img src="https://img.shields.io/badge/Claude_Code-CD9777?style=flat-square&amp;logo=anthropic&amp;logoColor=white" alt="Claude Code" /> <img src="https://img.shields.io/badge/Claude_Code_Workflows-CD9777?style=flat-square&amp;logo=anthropic&amp;logoColor=white" alt="Claude Code Workflows" /> <img src="https://img.shields.io/badge/AI--assisted_Coding-7256A8?style=flat-square" alt="AI-assisted Coding" /> <img src="https://img.shields.io/badge/Agent_Orchestration-6D5FB0?style=flat-square" alt="Agent Orchestration" /> <img src="https://img.shields.io/badge/Independent_AI_Review-525E85?style=flat-square" alt="Independent AI Review" /> <img src="https://img.shields.io/badge/Tool_Calling-6949AE?style=flat-square" alt="Tool Calling" /> <img src="https://img.shields.io/badge/Human--in--the--loop-1F8060?style=flat-square" alt="Human-in-the-loop" /> <img src="https://img.shields.io/badge/OpenAI_API_Adapters-526D7C?style=flat-square" alt="OpenAI API Adapters" /></p>
+
+### Testing, review & quality
+
+<p><img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&amp;logo=pytest&amp;logoColor=white" alt="pytest" /> <img src="https://img.shields.io/badge/pytest--asyncio-0A9EDC?style=flat-square" alt="pytest-asyncio" /> <img src="https://img.shields.io/badge/Ruff-7C3AED?style=flat-square&amp;logo=ruff&amp;logoColor=white" alt="Ruff" /> <img src="https://img.shields.io/badge/mypy-2A6DB4?style=flat-square&amp;logo=python&amp;logoColor=white" alt="mypy" /> <img src="https://img.shields.io/badge/Vitest-729B1B?style=flat-square&amp;logo=vitest&amp;logoColor=white" alt="Vitest" /> <img src="https://img.shields.io/badge/Playwright_E2E-2EAD33?style=flat-square" alt="Playwright E2E" /> <img src="https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&amp;logo=eslint&amp;logoColor=white" alt="ESLint" /> <img src="https://img.shields.io/badge/Prettier-BC8429?style=flat-square&amp;logo=prettier&amp;logoColor=white" alt="Prettier" /> <img src="https://img.shields.io/badge/SDD-586D8C?style=flat-square" alt="SDD" /> <img src="https://img.shields.io/badge/Integration_Tests-328469?style=flat-square" alt="Integration Tests" /> <img src="https://img.shields.io/badge/Code_Review-526D7C?style=flat-square" alt="Code Review" /></p>
+
+### DevOps & delivery
+
+<p><img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white" alt="Docker" /> <img src="https://img.shields.io/badge/Docker_Compose-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white" alt="Docker Compose" /> <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&amp;logo=githubactions&amp;logoColor=white" alt="GitHub Actions" /> <img src="https://img.shields.io/badge/GitLab_CI-FC6D26?style=flat-square&amp;logo=gitlab&amp;logoColor=white" alt="GitLab CI" /> <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&amp;logo=git&amp;logoColor=white" alt="Git" /> <img src="https://img.shields.io/badge/CI%2FCD-2088FF?style=flat-square" alt="CI/CD" /> <img src="https://img.shields.io/badge/Python_Packaging-5279AA?style=flat-square" alt="Python Packaging" /> <img src="https://img.shields.io/badge/cPanel-FF6C2C?style=flat-square" alt="cPanel" /> <img src="https://img.shields.io/badge/PM2-198A48?style=flat-square" alt="PM2" /></p>
+
+*These groups show hands-on technologies and workflows, not certifications or proficiency percentages.*
 
 ---
 
 ## Selected impact
 
-- Reduced selected enterprise accounting routines from **30–40 minutes to ~3 minutes per company** through automation.
-- Helped remove **20+ person-hours of repetitive monthly work** across accounting operations.
-- Evolved an internal automation platform into a structured software product with **2,754 passing automated tests**, CI, controlled releases, recovery mechanisms, and documented architecture.
-- Built solutions that connect **Python, SAP ECC, SAP BPC/EPM, APIs, enterprise service workflows, filesystem operations, and evidence generation**.
-- Applied software engineering practices to operational finance problems where reliability, traceability, and safe failure behavior matter as much as speed.
+- Reduced selected recurring accounting routines from **30–40 minutes to approximately 3 minutes per company**.
+
+- Helped remove approximately **20 person-hours of repetitive work** from an intercompany accounting workflow.
+
+- Delivered a documented BAS quality gate with **2,754 passing tests** and controlled review/release processes.
 
 ---
 
-## BAS architecture at a glance
+## Featured enterprise work
 
-The diagram below is a **sanitized, high-level view** of the architecture. It intentionally excludes proprietary business rules, credentials, infrastructure details, and internal configuration.
+<table>
+<tr><td width="100%" valign="top">
+<h3>Business Accounting Suite (BAS)</h3>
+<p><img src="https://img.shields.io/badge/PRIVATE_%C2%B7_ENTERPRISE_CASE_STUDY-555555?style=flat-square" alt="PRIVATE · ENTERPRISE CASE STUDY" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Flet-02569B?style=flat-square&amp;logo=flutter&amp;logoColor=white" alt="Flet" /> <img src="https://img.shields.io/badge/SAP_ECC-0FAAFF?style=flat-square&amp;logo=sap&amp;logoColor=white" alt="SAP ECC" /> <img src="https://img.shields.io/badge/SAP_BPC_%2F_EPM-0FAAFF?style=flat-square&amp;logo=sap&amp;logoColor=white" alt="SAP BPC / EPM" /> <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&amp;logo=pytest&amp;logoColor=white" alt="pytest" /> <img src="https://img.shields.io/badge/GitLab_CI-FC6D26?style=flat-square&amp;logo=gitlab&amp;logoColor=white" alt="GitLab CI" /> <img src="https://img.shields.io/badge/SDD-586D8C?style=flat-square" alt="SDD" /> <img src="https://img.shields.io/badge/CI%2FCD-2088FF?style=flat-square" alt="CI/CD" /></p>
+<p>A modular desktop application for accounting operations, integrating reusable Python services, SAP workflows, validated execution, automated quality gates, evidence generation, and recovery mechanisms.</p>
+<p><strong>2,754</strong> · Passing tests in documented CI baseline<br/>
+<strong>~20h</strong> · Manual work reduced in a selected routine<br/>
+<strong>~3 min</strong> · Process time reduced from 30–40 min to ~3 min</p>
+<p><em>Source code and proprietary business details are private. Only non-sensitive architecture and engineering outcomes are described here.</em></p>
+</td></tr>
+</table>
 
-```mermaid
+### BAS architecture (sanitized)
+
+Conceptual architecture only. External service connections shown as interface design must not be interpreted as proof of a production integration.
+
+~~~mermaid
 flowchart LR
-    U[Accounting User] --> UI[Flet Desktop UI]
-    UI --> S[Application Services]
+    USER["Accounting operations"] --> UI["Flet desktop UI"]
+    UI --> CORE["Application services & orchestration"]
+    CORE --> SAP["SAP ECC"]
+    CORE --> BPC["SAP BPC / EPM"]
+    CORE -. "Interface design" .-> EXT["External services / WBS"]
+    CORE --> SAFE["Validation, evidence & recovery"]
+    SAP --> SAFE
+    BPC --> SAFE
+    SAFE --> LOG["Logs & audit evidence"]
+~~~
 
-    S --> SAP[SAP ECC]
-    S --> BPC[SAP BPC / EPM]
-    S --> API[APIs / ServiceNow]
-
-    SAP --> E[Evidence & Recovery]
-    BPC --> E
-    API --> E
-    S --> E
-
-    E --> O[Logs · Files · Audit Evidence]
-```
-
-The key design idea is to keep **business rules and orchestration outside the UI**, isolate integration concerns, and make execution recoverable and auditable.
+The desktop interface is kept separate from application services and SAP integrations. Validation, evidence and recovery are first-class concerns.
 
 ---
 
-## Selected engineering work
+## AI-assisted engineering workflow
+
+An iterative, **human-orchestrated** process used in development: AI tools assist with implementation and review, automated checks verify changes, and a person decides when to integrate. This is not a claim of autonomous agents exchanging private code without oversight.
+
+~~~mermaid
+flowchart LR
+    REQ["Requirements & acceptance criteria"] --> CODE["Implementation: Codex / Claude Code"]
+    CODE --> QA["Tests, type checks & CI"]
+    QA --> REVIEW["Independent AI code review"]
+    REVIEW --> DEC{"Findings?"}
+    DEC -- "Yes" --> CODE
+    DEC -- "No" --> HUMAN["Human validation & merge"]
+~~~
+
+---
+
+## Selected public projects
+
+Public source code is linked below. Badges reflect technologies implemented in each repository; an optional external AI adapter does not imply a live paid-model deployment.
+
+### Backend & APIs
 
 <table>
 <tr>
 <td width="50%" valign="top">
+<h3><a href="https://github.com/RamonRDR/weather-cache-api">Weather Cache API</a></h3>
+<p><img src="https://img.shields.io/badge/PUBLIC_REPOSITORY-2EA44F?style=flat-square" alt="PUBLIC REPOSITORY" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&amp;logo=fastapi&amp;logoColor=white" alt="FastAPI" /> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&amp;logo=redis&amp;logoColor=white" alt="Redis" /> <img src="https://img.shields.io/badge/Pydantic-E92063?style=flat-square" alt="Pydantic" /> <img src="https://img.shields.io/badge/httpx_async-5165B6?style=flat-square" alt="httpx async" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white" alt="Docker" /> <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&amp;logo=pytest&amp;logoColor=white" alt="pytest" /> <img src="https://img.shields.io/badge/Ruff-7C3AED?style=flat-square&amp;logo=ruff&amp;logoColor=white" alt="Ruff" /></p>
+<p>REST weather API with geocoding, Redis cache, typed validation, and resilient upstream HTTP access.</p>
 
-<h3>Business Accounting Suite (BAS)</h3>
-
-<p>
-  <img src="https://img.shields.io/badge/PRIVATE-Enterprise%20Project-555555?style=flat-square" alt="Private enterprise project" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Flet-02569B?style=flat-square" alt="Flet" />
-  <img src="https://img.shields.io/badge/SAP-ECC%20%2F%20BPC-0FAAFF?style=flat-square&logo=sap&logoColor=white" alt="SAP" />
-</p>
-
-<p>
-A modular desktop automation platform built for enterprise accounting operations.
-It grew from individual automation routines into a governed software product with reusable services, SAP integration, structured releases, automated testing, CI, recovery mechanisms, and technical documentation.
-</p>
-
-<p>
-<strong>Engineering highlights:</strong> SAP GUI automation, SAP BPC/EPM, ServiceNow/WBS integration design, multi-session orchestration, evidence generation, controlled packaging, Spec-Driven Development, and production-oriented fail-safe behavior.
-</p>
-
-<p>
-The current documented baseline reached <strong>2,754 passing automated tests</strong>, plus 275 skipped tests and 30 passing subtests in its final CI gate.
-</p>
-
-<p><em>Repository is private because it contains enterprise project material. This profile presents only a public technical summary.</em></p>
-
+<p><img src="https://img.shields.io/github/stars/RamonRDR/weather-cache-api?style=flat-square" alt="Stars" /> <img src="https://img.shields.io/github/forks/RamonRDR/weather-cache-api?style=flat-square" alt="Forks" /></p>
 </td>
 <td width="50%" valign="top">
+<h3><a href="https://github.com/RamonRDR/shortlink-api">ShortLink API</a></h3>
+<p><img src="https://img.shields.io/badge/PUBLIC_REPOSITORY-2EA44F?style=flat-square" alt="PUBLIC REPOSITORY" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&amp;logo=fastapi&amp;logoColor=white" alt="FastAPI" /> <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&amp;logo=postgresql&amp;logoColor=white" alt="PostgreSQL" /> <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square" alt="SQLAlchemy" /> <img src="https://img.shields.io/badge/Alembic-555555?style=flat-square" alt="Alembic" /> <img src="https://img.shields.io/badge/Docker_Compose-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white" alt="Docker Compose" /> <img src="https://img.shields.io/badge/mypy-2A6DB4?style=flat-square&amp;logo=python&amp;logoColor=white" alt="mypy" /> <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&amp;logo=pytest&amp;logoColor=white" alt="pytest" /></p>
+<p>Security-conscious URL shortener with PostgreSQL persistence, migrations, documented endpoints, and database integration tests.</p>
 
-<h3>Manolo Contabilidade</h3>
-
-<p>
-  <img src="https://img.shields.io/badge/PRIVATE-Source%20Code-555555?style=flat-square" alt="Private source code" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
-</p>
-
-<p>
-A production website built with <strong>Next.js 14, TypeScript, and Tailwind CSS</strong>, including a deployment workflow designed for real-world shared hosting constraints.
-</p>
-
-<p>
-The project includes local production builds, cPanel packaging, PM2 process configuration, server startup scripts, deployment documentation, and operational maintenance procedures.
-</p>
-
-<p><em>Source repository is private. The live website is publicly available below.</em></p>
-
-<p>
-<a href="https://manolocontabilidade.com.br"><strong>Visit live website →</strong></a>
-</p>
-
+<p><img src="https://img.shields.io/github/stars/RamonRDR/shortlink-api?style=flat-square" alt="Stars" /> <img src="https://img.shields.io/github/forks/RamonRDR/shortlink-api?style=flat-square" alt="Forks" /></p>
 </td>
 </tr>
+</table>
 
+### Automation & developer tools
+
+<table>
 <tr>
 <td width="50%" valign="top">
+<h3><a href="https://github.com/RamonRDR/fileflow-cli">FileFlow CLI</a></h3>
+<p><img src="https://img.shields.io/badge/PUBLIC_REPOSITORY-2EA44F?style=flat-square" alt="PUBLIC REPOSITORY" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Typer_CLI-7952B3?style=flat-square" alt="Typer CLI" /> <img src="https://img.shields.io/badge/Rich-B17328?style=flat-square" alt="Rich" /> <img src="https://img.shields.io/badge/PyYAML-AD592C?style=flat-square" alt="PyYAML" /> <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&amp;logo=pytest&amp;logoColor=white" alt="pytest" /> <img src="https://img.shields.io/badge/Ruff-7C3AED?style=flat-square&amp;logo=ruff&amp;logoColor=white" alt="Ruff" /> <img src="https://img.shields.io/badge/Multi--platform_CI-497E91?style=flat-square" alt="Multi-platform CI" /></p>
+<p>Cross-platform CLI for rule-based file organization with dry-run/undo safeguards and reproducible tests.</p>
 
-<h3><a href="https://github.com/RamonRDR/fullstack-calculator">Full-Stack Calculator</a></h3>
-
-<p>
-  <img src="https://img.shields.io/badge/PUBLIC-Repository-2EA44F?style=flat-square" alt="Public repository" />
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go" />
-  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-</p>
-
-<p>
-A small full-stack application designed around correctness, readability, testability, and clear separation of concerns.
-</p>
-
-<p>
-The React frontend communicates with a Go REST API while domain logic remains isolated from the HTTP layer. The repository includes validation, backend and frontend tests, technical design documentation, production builds, and GitHub Actions quality gates.
-</p>
-
-<p>
-  <img src="https://img.shields.io/github/stars/RamonRDR/fullstack-calculator?style=flat-square" alt="GitHub stars" />
-  <img src="https://img.shields.io/github/forks/RamonRDR/fullstack-calculator?style=flat-square" alt="GitHub forks" />
-</p>
-
+<p><img src="https://img.shields.io/github/stars/RamonRDR/fileflow-cli?style=flat-square" alt="Stars" /> <img src="https://img.shields.io/github/forks/RamonRDR/fileflow-cli?style=flat-square" alt="Forks" /></p>
 </td>
 <td width="50%" valign="top">
+<h3><a href="https://github.com/RamonRDR/price-tracker-automation">Price Tracker Automation</a></h3>
+<p><img src="https://img.shields.io/badge/PUBLIC_REPOSITORY-2EA44F?style=flat-square" alt="PUBLIC REPOSITORY" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&amp;logo=playwright&amp;logoColor=white" alt="Playwright" /> <img src="https://img.shields.io/badge/SQLite_history-003B57?style=flat-square" alt="SQLite history" /> <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square" alt="SQLAlchemy" /> <img src="https://img.shields.io/badge/Typer_CLI-7952B3?style=flat-square" alt="Typer CLI" /> <img src="https://img.shields.io/badge/httpx-5165B6?style=flat-square" alt="httpx" /> <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&amp;logo=pytest&amp;logoColor=white" alt="pytest" /> <img src="https://img.shields.io/badge/Ruff-7C3AED?style=flat-square&amp;logo=ruff&amp;logoColor=white" alt="Ruff" /></p>
+<p>Price monitoring CLI using HTTP and browser extraction adapters, SQLite history, and controlled test fixtures.</p>
 
+<p><img src="https://img.shields.io/github/stars/RamonRDR/price-tracker-automation?style=flat-square" alt="Stars" /> <img src="https://img.shields.io/github/forks/RamonRDR/price-tracker-automation?style=flat-square" alt="Forks" /></p>
+</td>
+</tr>
+</table>
+
+### Applied AI, RAG & agent integrations
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/RamonRDR/ai-document-extractor">AI Document Extractor</a></h3>
+<p><img src="https://img.shields.io/badge/PUBLIC_REPOSITORY-2EA44F?style=flat-square" alt="PUBLIC REPOSITORY" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&amp;logo=fastapi&amp;logoColor=white" alt="FastAPI" /> <img src="https://img.shields.io/badge/Pydantic-E92063?style=flat-square" alt="Pydantic" /> <img src="https://img.shields.io/badge/JSON_Schema-7755AD?style=flat-square" alt="JSON Schema" /> <img src="https://img.shields.io/badge/Human_Review-1F8060?style=flat-square" alt="Human Review" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white" alt="Docker" /> <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&amp;logo=pytest&amp;logoColor=white" alt="pytest" /> <img src="https://img.shields.io/badge/mypy-2A6DB4?style=flat-square&amp;logo=python&amp;logoColor=white" alt="mypy" /></p>
+<p>Financial document extraction API with typed outputs, arithmetic checks, human approval, and optional model adapter.</p>
+
+<p><img src="https://img.shields.io/github/stars/RamonRDR/ai-document-extractor?style=flat-square" alt="Stars" /> <img src="https://img.shields.io/github/forks/RamonRDR/ai-document-extractor?style=flat-square" alt="Forks" /></p>
+</td>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/RamonRDR/document-rag-assistant">Document RAG Assistant</a></h3>
+<p><img src="https://img.shields.io/badge/PUBLIC_REPOSITORY-2EA44F?style=flat-square" alt="PUBLIC REPOSITORY" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&amp;logo=fastapi&amp;logoColor=white" alt="FastAPI" /> <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&amp;logo=postgresql&amp;logoColor=white" alt="PostgreSQL" /> <img src="https://img.shields.io/badge/pgvector-4877B8?style=flat-square" alt="pgvector" /> <img src="https://img.shields.io/badge/RAG-6956C4?style=flat-square" alt="RAG" /> <img src="https://img.shields.io/badge/Hybrid_Search-6A5ACD?style=flat-square" alt="Hybrid Search" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white" alt="Docker" /> <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&amp;logo=pytest&amp;logoColor=white" alt="pytest" /></p>
+<p>Document-question answering backend with PDF parsing, PostgreSQL/pgvector, hybrid retrieval, and traceable citations.</p>
+
+<p><img src="https://img.shields.io/github/stars/RamonRDR/document-rag-assistant?style=flat-square" alt="Stars" /> <img src="https://img.shields.io/github/forks/RamonRDR/document-rag-assistant?style=flat-square" alt="Forks" /></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/RamonRDR/weather-mcp-server">Weather MCP Server</a></h3>
+<p><img src="https://img.shields.io/badge/PUBLIC_REPOSITORY-2EA44F?style=flat-square" alt="PUBLIC REPOSITORY" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Model_Context_Protocol-6740A6?style=flat-square" alt="Model Context Protocol" /> <img src="https://img.shields.io/badge/MCP_stdio-6740A6?style=flat-square" alt="MCP stdio" /> <img src="https://img.shields.io/badge/Pydantic-E92063?style=flat-square" alt="Pydantic" /> <img src="https://img.shields.io/badge/httpx-5165B6?style=flat-square" alt="httpx" /> <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&amp;logo=pytest&amp;logoColor=white" alt="pytest" /> <img src="https://img.shields.io/badge/Ruff-7C3AED?style=flat-square&amp;logo=ruff&amp;logoColor=white" alt="Ruff" /></p>
+<p>Real Model Context Protocol server exposing typed, read-only weather tools via stdio and tested HTTP adapters.</p>
+
+<p><img src="https://img.shields.io/github/stars/RamonRDR/weather-mcp-server?style=flat-square" alt="Stars" /> <img src="https://img.shields.io/github/forks/RamonRDR/weather-mcp-server?style=flat-square" alt="Forks" /></p>
+</td>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/RamonRDR/ai-pull-request-reviewer">AI Pull Request Reviewer</a></h3>
+<p><img src="https://img.shields.io/badge/PUBLIC_REPOSITORY-2EA44F?style=flat-square" alt="PUBLIC REPOSITORY" /> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&amp;logo=typescript&amp;logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Octokit-30363D?style=flat-square&amp;logo=github&amp;logoColor=white" alt="Octokit" /> <img src="https://img.shields.io/badge/GitHub_REST_API-30363D?style=flat-square&amp;logo=github&amp;logoColor=white" alt="GitHub REST API" /> <img src="https://img.shields.io/badge/Zod-3068B7?style=flat-square" alt="Zod" /> <img src="https://img.shields.io/badge/Vitest-729B1B?style=flat-square&amp;logo=vitest&amp;logoColor=white" alt="Vitest" /> <img src="https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&amp;logo=eslint&amp;logoColor=white" alt="ESLint" /> <img src="https://img.shields.io/badge/Human_Review-1F8060?style=flat-square" alt="Human Review" /></p>
+<p>GitHub pull-request review CLI with bounded diffs, structured findings, synthetic evaluation, and approval safeguards.</p>
+
+<p><img src="https://img.shields.io/github/stars/RamonRDR/ai-pull-request-reviewer?style=flat-square" alt="Stars" /> <img src="https://img.shields.io/github/forks/RamonRDR/ai-pull-request-reviewer?style=flat-square" alt="Forks" /></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/RamonRDR/personal-ai-assistant">Personal AI Assistant</a></h3>
+<p><img src="https://img.shields.io/badge/PUBLIC_REPOSITORY-2EA44F?style=flat-square" alt="PUBLIC REPOSITORY" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&amp;logo=fastapi&amp;logoColor=white" alt="FastAPI" /> <img src="https://img.shields.io/badge/Tool_Calling-6949AE?style=flat-square" alt="Tool Calling" /> <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&amp;logo=sqlite&amp;logoColor=white" alt="SQLite" /> <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square" alt="SQLAlchemy" /> <img src="https://img.shields.io/badge/Human--in--the--loop-1F8060?style=flat-square" alt="Human-in-the-loop" /> <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&amp;logo=pytest&amp;logoColor=white" alt="pytest" /> <img src="https://img.shields.io/badge/Ruff-7C3AED?style=flat-square&amp;logo=ruff&amp;logoColor=white" alt="Ruff" /></p>
+<p>Local-first assistant for tasks and appointments with audited tool calling, persistent state, and human approval.</p>
+
+<p><img src="https://img.shields.io/github/stars/RamonRDR/personal-ai-assistant?style=flat-square" alt="Stars" /> <img src="https://img.shields.io/github/forks/RamonRDR/personal-ai-assistant?style=flat-square" alt="Forks" /></p>
+</td>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/RamonRDR/voice-ai-agent/tree/feat/voice-ai-agent-mvp">Voice AI Agent</a></h3>
+<p><img src="https://img.shields.io/badge/DEVELOPMENT_BRANCH-9A6711?style=flat-square" alt="DEVELOPMENT BRANCH" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&amp;logo=fastapi&amp;logoColor=white" alt="FastAPI" /> <img src="https://img.shields.io/badge/FFmpeg-4B8E36?style=flat-square" alt="FFmpeg" /> <img src="https://img.shields.io/badge/Tool_Calling-6949AE?style=flat-square" alt="Tool Calling" /> <img src="https://img.shields.io/badge/eSpeak_NG-3478C0?style=flat-square" alt="eSpeak NG" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white" alt="Docker" /> <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&amp;logo=pytest&amp;logoColor=white" alt="pytest" /></p>
+<p>Turn-based voice-agent prototype combining audio processing, speech adapters, tool permissions, and a browser demo.</p>
+
+<p><img src="https://img.shields.io/github/stars/RamonRDR/voice-ai-agent?style=flat-square" alt="Stars" /> <img src="https://img.shields.io/github/forks/RamonRDR/voice-ai-agent?style=flat-square" alt="Forks" /></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/RamonRDR/whatsapp-ai-agent">WhatsApp AI Agent</a></h3>
+<p><img src="https://img.shields.io/badge/DEVELOPMENT_BRANCH-9A6711?style=flat-square" alt="DEVELOPMENT BRANCH" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&amp;logo=fastapi&amp;logoColor=white" alt="FastAPI" /> <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&amp;logo=sqlite&amp;logoColor=white" alt="SQLite" /> <img src="https://img.shields.io/badge/Meta_API_(mock)-25D366?style=flat-square" alt="Meta API (mock)" /> <img src="https://img.shields.io/badge/Tool_Calling-6949AE?style=flat-square" alt="Tool Calling" /> <img src="https://img.shields.io/badge/HMAC-646E82?style=flat-square" alt="HMAC" /> <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&amp;logo=pytest&amp;logoColor=white" alt="pytest" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white" alt="Docker" /></p>
+<p>Offline-first customer-support and fictional-booking agent with signed webhook validation and a mock-tested Meta API adapter.</p>
+
+<p><img src="https://img.shields.io/github/stars/RamonRDR/whatsapp-ai-agent?style=flat-square" alt="Stars" /> <img src="https://img.shields.io/github/forks/RamonRDR/whatsapp-ai-agent?style=flat-square" alt="Forks" /></p>
+</td>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/RamonRDR/ai-website-generator/tree/feat/structured-website-generator">AI Website Generator</a></h3>
+<p><img src="https://img.shields.io/badge/DEVELOPMENT_BRANCH-9A6711?style=flat-square" alt="DEVELOPMENT BRANCH" /> <img src="https://img.shields.io/badge/Next.js-111111?style=flat-square&amp;logo=nextdotjs&amp;logoColor=white" alt="Next.js" /> <img src="https://img.shields.io/badge/React-149ECA?style=flat-square&amp;logo=react&amp;logoColor=white" alt="React" /> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&amp;logo=typescript&amp;logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Zod-3068B7?style=flat-square" alt="Zod" /> <img src="https://img.shields.io/badge/Vitest-729B1B?style=flat-square&amp;logo=vitest&amp;logoColor=white" alt="Vitest" /> <img src="https://img.shields.io/badge/Playwright_E2E-2EAD33?style=flat-square" alt="Playwright E2E" /> <img src="https://img.shields.io/badge/ZIP_Export-5378AF?style=flat-square" alt="ZIP Export" /></p>
+<p>Structured website-generation studio with editable previews, safe rendering, exports, and an opt-in model adapter.</p>
+
+<p><img src="https://img.shields.io/github/stars/RamonRDR/ai-website-generator?style=flat-square" alt="Stars" /> <img src="https://img.shields.io/github/forks/RamonRDR/ai-website-generator?style=flat-square" alt="Forks" /></p>
+</td>
+</tr>
+</table>
+
+---
+
+## Web delivery & additional projects
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/RamonRDR/fullstack-calculator">Full-Stack Calculator</a></h3>
+<p><img src="https://img.shields.io/badge/PUBLIC_REPOSITORY-2EA44F?style=flat-square" alt="PUBLIC REPOSITORY" /> <img src="https://img.shields.io/badge/Go_API-00ADD8?style=flat-square" alt="Go API" /> <img src="https://img.shields.io/badge/React-149ECA?style=flat-square&amp;logo=react&amp;logoColor=white" alt="React" /> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&amp;logo=typescript&amp;logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/REST_APIs-276DAE?style=flat-square" alt="REST APIs" /> <img src="https://img.shields.io/badge/Vitest-729B1B?style=flat-square&amp;logo=vitest&amp;logoColor=white" alt="Vitest" /> <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&amp;logo=githubactions&amp;logoColor=white" alt="GitHub Actions" /></p>
+<p>React/TypeScript frontend and Go REST API, separating domain logic from HTTP with unit and UI tests.</p>
+
+<p><img src="https://img.shields.io/github/stars/RamonRDR/fullstack-calculator?style=flat-square" alt="Stars" /> <img src="https://img.shields.io/github/forks/RamonRDR/fullstack-calculator?style=flat-square" alt="Forks" /></p>
+</td>
+<td width="50%" valign="top">
 <h3><a href="https://github.com/RamonRDR/python-study-guide">Python Study Guide</a></h3>
+<p><img src="https://img.shields.io/badge/PUBLIC_REPOSITORY-2EA44F?style=flat-square" alt="PUBLIC REPOSITORY" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&amp;logo=pytest&amp;logoColor=white" alt="pytest" /> <img src="https://img.shields.io/badge/Code_Review-526D7C?style=flat-square" alt="Code Review" /> <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&amp;logo=githubactions&amp;logoColor=white" alt="GitHub Actions" /></p>
+<p>Multilingual Python learning/reference repository with exercises, tested examples, documented workflows, and review guidance.</p>
 
-<p>
-  <img src="https://img.shields.io/badge/PUBLIC-Repository-2EA44F?style=flat-square" alt="Public repository" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/EN%20%7C%20PT--BR%20%7C%20ES-Multilingual-blue?style=flat-square" alt="Multilingual" />
-</p>
-
-<p>
-A multilingual Python learning and reference project built as a structured engineering repository rather than a loose collection of notes.
-</p>
-
-<p>
-It combines concept explanations, practical examples, exercises, automated tests, practical projects, documentation standards, contribution guidelines, localization, and an explicit AI-assisted development workflow.
-</p>
-
-<p>
-  <img src="https://img.shields.io/github/stars/RamonRDR/python-study-guide?style=flat-square" alt="GitHub stars" />
-  <img src="https://img.shields.io/github/forks/RamonRDR/python-study-guide?style=flat-square" alt="GitHub forks" />
-</p>
+<p><img src="https://img.shields.io/github/stars/RamonRDR/python-study-guide?style=flat-square" alt="Stars" /> <img src="https://img.shields.io/github/forks/RamonRDR/python-study-guide?style=flat-square" alt="Forks" /></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3>Manolo Contabilidade</h3>
+<p><img src="https://img.shields.io/badge/PRIVATE_SOURCE-555555?style=flat-square" alt="PRIVATE SOURCE" /> <img src="https://img.shields.io/badge/Next.js-111111?style=flat-square&amp;logo=nextdotjs&amp;logoColor=white" alt="Next.js" /> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&amp;logo=typescript&amp;logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&amp;logo=tailwindcss&amp;logoColor=white" alt="Tailwind CSS" /> <img src="https://img.shields.io/badge/cPanel-FF6C2C?style=flat-square" alt="cPanel" /> <img src="https://img.shields.io/badge/PM2-198A48?style=flat-square" alt="PM2" /></p>
+<p>Institutional website built with Next.js, TypeScript, and Tailwind, including documented cPanel and PM2 deployment workflows.</p>
+<p><a href="https://manolocontabilidade.com.br"><strong>Live website</strong></a></p>
 
 </td>
+<td width="50%"></td>
 </tr>
 </table>
 
@@ -203,52 +265,31 @@ It combines concept explanations, practical examples, exercises, automated tests
 
 ## How I approach engineering
 
-I tend to work from the problem outward:
+- Understand business rules before automating them.
 
-- understand the business rule before automating it;
-- separate domain logic from interfaces and infrastructure;
-- make failures explicit instead of hiding them;
-- create automated tests around critical behavior;
-- use CI as evidence, not as a substitute for validation;
-- document architectural decisions and operational constraints;
-- design recovery and observability as part of the system, not as afterthoughts;
-- use AI tools as engineering accelerators while keeping human review, testing, and accountability in the loop.
+- Keep domain logic separate from APIs, interfaces, and infrastructure.
 
-That mindset comes from working on software where a "small script" can eventually become part of a real operational process.
+- Use automated tests, typed contracts, CI, and proportionate quality gates.
+
+- Design for safe failure, recovery, observability, and auditability.
+
+- Use AI as an engineering aid, with independent review and human accountability.
 
 ---
 
 ## Education & languages
 
-**Education**
+Postgraduate Specialization · Artificial Intelligence, Data Science, Machine Learning & Big Data Analytics (UNISOCIESC, 2026).
 
-- **B.Sc. in Computer Science — UNISOCIESC** · In progress
-- **Postgraduate specialization in Artificial Intelligence, Machine Learning & Big Data** · Completed in 2026
-
-**Languages**
-
-- **Portuguese:** Native
-- **English:** Intermediate
-- **Spanish:** Good comprehension
-
----
-
-## Areas I am especially interested in
-
-`Python` · `Backend Engineering` · `Automation` · `AI / Agents` · `APIs` · `QA & Test Automation` · `Enterprise Integrations` · `Developer Tooling`
-
-I am particularly interested in roles where software engineering meets **automation, AI, data, integrations, or complex business workflows**.
+**Languages:** Portuguese (native) · English (advanced working proficiency) · Spanish (intermediate).
 
 ---
 
 <div align="center">
-
-### Let's connect
-
-If you are working on Python, automation, backend systems, AI-enabled products, or enterprise integrations, feel free to reach out.
-
-<a href="https://www.linkedin.com/in/ramon-e-rodriguez/">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn" />
-</a>
-
+<h2>Let's connect</h2>
+<p>Open to remote international opportunities in backend Python, automation, applied AI and enterprise integrations.</p>
+<a href="https://www.linkedin.com/in/ramon-e-rodriguez/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn" /></a>
+<a href="https://ramonrodriguez.com.br"><img src="https://img.shields.io/badge/Portfolio-2668B7?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Portfolio" /></a>
+<a href="https://rdrlabs.com.br"><img src="https://img.shields.io/badge/RDR_Labs-175F78?style=for-the-badge&amp;logo=vercel&amp;logoColor=white" alt="RDR Labs" /></a>
+<a href="https://github.com/RamonRDR"><img src="https://img.shields.io/badge/GitHub-24292F?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub" /></a>
 </div>
