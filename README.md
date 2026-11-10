@@ -183,7 +183,7 @@ flowchart LR
     class HANDOFF,DONE audit
 ~~~
 
-*Measurement note: The final ~3 minutes reflects human verification and task closure. API execution, SAP processing, file generation and delivery continue in the background; no automated runtime is claimed here.*
+<p><small><em>Measurement note: The final ~3 minutes reflects human verification and task closure. API execution, SAP processing, file generation and delivery continue in the background; no automated runtime is claimed here.</em></small></p>
 ---
 
 <h2 align="center">AI-assisted engineering workflow</h2>
@@ -228,7 +228,7 @@ Review findings are routed back to the coding agent for corrections. After each 
 
 Public source code is linked below. Badges reflect technologies implemented in each repository; an optional external AI adapter does not imply a live paid-model deployment.
 
-### Backend & APIs
+<h3 align="center">Backend & APIs</h3>
 
 <table>
 <tr>
@@ -249,7 +249,7 @@ Public source code is linked below. Badges reflect technologies implemented in e
 </tr>
 </table>
 
-### Automation & developer tools
+<h3 align="center">Automation & developer tools</h3>
 
 <table>
 <tr>
@@ -270,7 +270,7 @@ Public source code is linked below. Badges reflect technologies implemented in e
 </tr>
 </table>
 
-### Applied AI, RAG & agent integrations
+<h3 align="center">Applied AI, RAG & agent integrations</h3>
 
 <table>
 <tr>
