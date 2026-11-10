@@ -390,9 +390,32 @@ Public source code is linked below. Badges reflect technologies implemented in e
 
 ---
 
-<h2 align="center">Education & languages</h2>
+<h2 align="center">Education & professional training</h2>
 
-Postgraduate Specialization · Artificial Intelligence, Data Science, Machine Learning & Big Data Analytics (UNISOCIESC, 2026).
+**Academic education**
+
+- **Postgraduate Specialization in Artificial Intelligence, Data Science, Machine Learning & Big Data Analytics** · UNISOCIESC · **360 hours** (2026).
+
+**AI, cloud & AI-assisted development**
+
+- **AI-900: Azure AI Fundamentals (training course)** · Fundação Bradesco · 16h.
+- **AI Solutions on GitHub** · Santander · 15h.
+- **Claude: Advanced** · LinkedIn Learning · 1h 13m.
+- **Claude Code CLI Fundamentals** · LinkedIn Learning · 2h 02m.
+- **Responsible Prompting (Microsoft)** · Santander · 8h.
+- **Cloud Academy** · certification learning path **in progress** (not yet certified).
+
+**Software engineering & automation**
+
+- **Git & GitHub: Basic Training** · LinkedIn Learning · 58m.
+- **SAP Activate: Agile Project Management for SAP** · Alura · 6h.
+- **Process Management: Lean & RPA Automation** · Alura · 8h.
+- **Microsoft Excel VBA** · WEG · 40h.
+
+**Data & analytics**
+
+- **Advanced Power BI Techniques** · LinkedIn Learning · 3h 36m.
+- **Generative AI for Finance & Accounting** · LinkedIn Learning · 46m.
 
 **Languages:** Portuguese (native) · English (advanced working proficiency) · Spanish (intermediate).
 
