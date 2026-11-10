@@ -4,15 +4,9 @@
 <p><strong>Integraciones Empresariales (SAP) · CI/CD · Calidad de Software</strong></p>
 <p>🎓 Posgrado en IA, Machine Learning & Big Data Analytics</p>
 <p align="center">
-  <a href="https://github.com/RamonRDR/RamonRDR/blob/main/README.md" title="English (default)">
-    <img src="https://img.shields.io/badge/EN-English%20%28default%29-218A58?style=for-the-badge" alt="English (default)" />
-  </a>
-  <a href="https://github.com/RamonRDR/RamonRDR/blob/main/docs/README.pt-BR.md" title="Português (Brasil)">
-    <img src="https://img.shields.io/badge/BR-Portugu%C3%AAs-4B5563?style=for-the-badge" alt="Português" />
-  </a>
-  <a href="https://github.com/RamonRDR/RamonRDR/blob/main/docs/README.es.md" title="Español">
-    <img src="https://img.shields.io/badge/ES-Espa%C3%B1ol-4B5563?style=for-the-badge" alt="Español" />
-  </a>
+  <a href="https://github.com/RamonRDR/RamonRDR/blob/main/README.md" title="English (default)"><img src="../assets/badges/language-en.svg" alt="English (default), US flag colors" width="207" height="34" /></a>
+  <a href="https://github.com/RamonRDR/RamonRDR/blob/main/docs/README.pt-BR.md" title="Português (Brasil)"><img src="../assets/badges/language-pt-br.svg" alt="Português, Brazilian flag colors" width="207" height="34" /></a>
+  <a href="https://github.com/RamonRDR/RamonRDR/blob/main/docs/README.es.md" title="Español"><img src="../assets/badges/language-es.svg" alt="Español, Spanish flag colors" width="207" height="34" /></a>
 </p>
 <a href="https://www.linkedin.com/in/ramon-e-rodriguez/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn" /></a>
 <a href="https://ramonrodriguez.com.br"><img src="https://img.shields.io/badge/Portfolio-2668B7?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Portfolio" /></a>
