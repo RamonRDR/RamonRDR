@@ -390,9 +390,32 @@ El código público está enlazado. Las insignias reflejan tecnologías realment
 
 ---
 
-<h2 align="center">Formación e idiomas</h2>
+<h2 align="center">Formación y cursos profesionales</h2>
 
-Posgrado · Inteligencia Artificial, Ciencia de Datos, Machine Learning & Big Data Analytics (UNISOCIESC, 2026).
+**Formación académica**
+
+- **Posgrado en Inteligencia Artificial, Ciencia de Datos, Machine Learning y Big Data Analytics** · UNISOCIESC · **360 horas** (2026).
+
+**IA, cloud y desarrollo asistido por IA**
+
+- **AI-900: Fundamentos de IA en Azure (curso de formación)** · Fundação Bradesco · 16h.
+- **AI Solutions on GitHub** · Santander · 15h.
+- **Claude: Avanzado** · LinkedIn Learning · 1h 13min.
+- **Fundamentos de Claude Code CLI** · LinkedIn Learning · 2h 02min.
+- **Prompting Responsable (Microsoft)** · Santander · 8h.
+- **Cloud Academy** · itinerario de preparación para certificación **en curso** (certificación aún no obtenida).
+
+**Ingeniería de software y automatización**
+
+- **Git y GitHub: Formación Básica** · LinkedIn Learning · 58min.
+- **SAP Activate: Gestión Ágil de Proyectos SAP** · Alura · 6h.
+- **Gestión de Procesos: Lean y Automatización RPA** · Alura · 8h.
+- **Microsoft Excel VBA** · WEG · 40h.
+
+**Datos y analítica**
+
+- **Técnicas Avanzadas de Power BI** · LinkedIn Learning · 3h 36min.
+- **Inteligencia Artificial Generativa para Finanzas y Contabilidad** · LinkedIn Learning · 46min.
 
 **Idiomas:** Portugués (nativo) · Inglés (avanzado, uso profesional) · Español (intermedio).
 
