@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="207" height="34" viewBox="0 0 207 34" role="img" aria-label="Español de España: Español">
+<title>Español de España: Español</title>
+<defs><clipPath id="clip"><rect width="207" height="34" rx="6"/></clipPath></defs>
+<g clip-path="url(#clip)">
+<rect width="207" height="34" fill="#202832"/>
+<rect width="50" height="34" fill="#AA151B"/>
+<rect x="0" y="8.5" width="50" height="17" fill="#F1BF00"/>
+<rect x="0" y="25.5" width="50" height="8.5" fill="#AA151B"/>
+<rect x="50" y="0" width="1" height="31" fill="#475569"/>
+<text x="62" y="21.2" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="600">Español</text>
+<rect x="50" y="31" width="52.4" height="3" fill="#AA151B"/>
+<rect x="102.4" y="31" width="52.4" height="3" fill="#F1BF00"/>
+<rect x="154.8" y="31" width="52.2" height="3" fill="#AA151B"/>
+</g>
+<rect x="0.5" y="0.5" width="206" height="33" rx="5.5" fill="none" stroke="#475569"/>
+</svg>
