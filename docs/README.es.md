@@ -59,7 +59,7 @@ Trabajo principalmente con **Python, APIs, integraciones y automatización**, ad
 
 **WEG S.A. | Mejora del cierre contable:** Ayudé a abordar un desafío histórico del cierre contable mediante análisis de procesos y automatizaciones apoyadas por BAS. Durante el primer mes de uso de BAS, el equipo completó el cierre **27 minutos antes del objetivo**; las mejoras posteriores ampliaron el margen a **aproximadamente dos horas antes del objetivo**.
 
-- Reducción de determinados procesos contables recurrentes de **30–40 minutos a aproximadamente 3 minutos por empresa**.
+- Reducción de la **intervención humana por tarea contable** de aproximadamente **30–40 minutos** (hasta ~60 minutos en algunas empresas) a **~10 minutos** con BAS iniciado por una persona y, posteriormente, **~3 minutos** para auditoría y cierre después de la ejecución en segundo plano activada por API.
 
 - Eliminación aproximada de **20 horas-persona de trabajo repetitivo** en un flujo contable intercompany.
 
@@ -73,52 +73,117 @@ Trabajo principalmente con **Python, APIs, integraciones y automatización**, ad
 <tr><td width="100%" valign="top">
 <h3 align="center">Business Accounting Suite (BAS)</h3>
 <p><img src="https://img.shields.io/badge/PRIVADO_%C2%B7_CASO_EMPRESARIAL-555555?style=flat-square" alt="PRIVADO · CASO EMPRESARIAL" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Flet-02569B?style=flat-square&amp;logo=flutter&amp;logoColor=white" alt="Flet" /> <img src="https://img.shields.io/badge/SAP_ECC-0FAAFF?style=flat-square&amp;logo=sap&amp;logoColor=white" alt="SAP ECC" /> <img src="https://img.shields.io/badge/SAP_BPC_%2F_EPM-0FAAFF?style=flat-square&amp;logo=sap&amp;logoColor=white" alt="SAP BPC / EPM" /> <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&amp;logo=pytest&amp;logoColor=white" alt="pytest" /> <img src="https://img.shields.io/badge/GitLab_CI-FC6D26?style=flat-square&amp;logo=gitlab&amp;logoColor=white" alt="GitLab CI" /> <img src="https://img.shields.io/badge/SDD-586D8C?style=flat-square" alt="SDD" /> <img src="https://img.shields.io/badge/CI%2FCD-2088FF?style=flat-square" alt="CI/CD" /></p>
-<p>**Desarrollado en WEG S.A.** WEG es una multinacional brasileña con sede en Jaraguá do Sul, Santa Catarina, y [uno de los mayores fabricantes de motores eléctricos del mundo](https://www.weg.net/institutional/RW/en/this-is-weg). El trabajo combinó conocimiento de los procesos contables con ingeniería de software para resolver obstáculos operativos recurrentes.</p>
-<p>Aplicación de escritorio modular para operaciones contables, con servicios Python reutilizables, flujos SAP, ejecución validada, controles automatizados de calidad, generación de evidencias y recuperación ante fallos.</p>
+<p><strong>Desarrollado en WEG S.A.</strong> WEG es una multinacional brasileña con sede en Jaraguá do Sul, Santa Catarina, y <a href="https://www.weg.net/institutional/RW/en/this-is-weg">uno de los mayores fabricantes de motores eléctricos del mundo</a>. El trabajo combinó conocimiento de los procesos contables con ingeniería de software para resolver obstáculos operativos recurrentes.</p>
+<p>Solución modular de automatización contable en Python, que evolucionó desde la interfaz de escritorio Flet hasta la ejecución en segundo plano activada por API, integrando procesos SAP, generación automática de evidencias, validación, registros y recuperación ante fallos.</p>
 <p><strong>27 min antes</strong> · Objetivo del cierre durante el primer mes de BAS<br/>
 <strong>~2h antes</strong> · Objetivo del cierre tras mejoras posteriores<br/><strong>2,754</strong> · Pruebas aprobadas en la versión documentada<br/>
 <strong>~20h</strong> · Trabajo manual reducido en un proceso específico<br/>
-<strong>~3 min</strong> · Proceso reducido de 30–40 min a ~3 min</p>
+<strong>30–40 → ~10 → ~3 min</strong> · Intervención humana por tarea en tres etapas (manual → BAS asistido → API)</p>
 <p><em>El código y los detalles propietarios son privados. Aquí solo se describen la arquitectura y los resultados técnicos no sensibles.</em></p>
 </td></tr>
 </table>
 
 ### Arquitectura BAS (vista simplificada y segura)
 
-Arquitectura conceptual. Mostrar interfaces externas como diseño no implica que exista una integración productiva.
+Tres etapas de evolución de una tarea contable en ServiceNow/WBS. **Los tiempos representan la intervención humana por tarea**, no la duración total del procesamiento automático. BAS continúa ejecutando operaciones SAP y generando archivos sin intervención manual.
+
+| Etapa | Intervención humana por tarea | Modelo de ejecución |
+| --- | ---: | --- |
+| 1. Antes de BAS | **30–40 min**, hasta ~60 min | Operaciones contables y evidencias manuales |
+| 2. BAS iniciado por una persona | **~10 min** | BAS automatiza SAP y archivos; la persona adjunta evidencias |
+| 3. ServiceNow + API + BAS | **~3 min** | Ejecución en segundo plano; una persona audita y cierra |
+
+#### Etapa 1 · Flujo completamente manual
+
+Una persona recibe la tarea en ServiceNow, realiza los asientos y carga valores en SAP, crea archivos Excel/PDF, registros y capturas de pantalla, los guarda en la red y adjunta archivos, imágenes y enlaces de carpetas en ServiceNow antes de cerrar.
 
 ~~~mermaid
 flowchart LR
-    USER["Operaciones contables"] --> UI["Interfaz Flet"]
-    UI --> CORE["Servicios Python de aplicación"]
-    CORE --> ECC["SAP ECC"]
-    CORE --> BPC["SAP BPC / EPM"]
-    CORE -. "Diseño de interfaz" .-> SN["ServiceNow"]
-    SN -->|"Orquesta los flujos WBS"| WBS["WBS platform"]
-    CORE --> SAFE["Validación, evidencias y recuperación"]
-    ECC --> SAFE
-    BPC --> SAFE
-    SAFE --> LOG["Registros y evidencias de auditoría"]
+    SN["Tarea ServiceNow / WBS"]
+    STEP["Abrir SAP y contabilizar valores"]
+    EXEC["Excel / PDF, registros y capturas"]
+    FILES["Guardar evidencias en la red"]
+    HANDOFF["Adjuntar archivos, imágenes y enlaces"]
+    DONE["Cerrar en ServiceNow"]
+    SN --> STEP
+    STEP --> EXEC
+    EXEC --> FILES
+    FILES --> HANDOFF
+    HANDOFF --> DONE
 
-    classDef business fill:#1D4ED8,stroke:#93C5FD,color:#FFFFFF,stroke-width:1.5px
-    classDef interface fill:#0F766E,stroke:#99F6E4,color:#FFFFFF,stroke-width:1.5px
-    classDef service fill:#5B21B6,stroke:#C4B5FD,color:#FFFFFF,stroke-width:1.5px
-    classDef sap fill:#C2410C,stroke:#FDBA74,color:#FFFFFF,stroke-width:1.5px
-    classDef external fill:#166534,stroke:#86EFAC,color:#FFFFFF,stroke-width:1.5px
-    classDef safety fill:#9D174D,stroke:#F9A8D4,color:#FFFFFF,stroke-width:1.5px
-    classDef audit fill:#334155,stroke:#CBD5E1,color:#FFFFFF,stroke-width:1.5px
+    classDef serviceNow fill:#075985,stroke:#7DD3FC,color:#FFFFFF,stroke-width:1.5px
+    classDef human fill:#1D4ED8,stroke:#93C5FD,color:#FFFFFF,stroke-width:1.5px
+    classDef execution fill:#6D28D9,stroke:#C4B5FD,color:#FFFFFF,stroke-width:1.5px
+    classDef evidence fill:#B45309,stroke:#FCD34D,color:#FFFFFF,stroke-width:1.5px
+    classDef audit fill:#166534,stroke:#86EFAC,color:#FFFFFF,stroke-width:1.5px
 
-    class USER business
-    class UI interface
-    class CORE service
-    class ECC,BPC sap
-    class SN,WBS external
-    class SAFE safety
-    class LOG audit
+    class SN serviceNow
+    class STEP,EXEC human
+    class FILES,HANDOFF evidence
+    class DONE audit
 ~~~
 
-La interfaz de escritorio está separada de los servicios de aplicación y de las integraciones SAP. La validación, las evidencias y la recuperación son elementos fundamentales.
+#### Etapa 2 · Ejecución asistida por BAS
 
+ServiceNow sigue asignando la tarea a la cola. Una persona abre BAS e inicia la ejecución. BAS automatiza los asientos SAP, archivos, capturas, registros y evidencias en red; la persona adjunta los resultados en ServiceNow y cierra la tarea.
+
+~~~mermaid
+flowchart LR
+    SN["Cola ServiceNow / WBS"]
+    STEP["Persona inicia BAS"]
+    EXEC["BAS contabiliza en SAP"]
+    FILES["BAS genera archivos, imágenes y logs"]
+    HANDOFF["Persona adjunta en ServiceNow"]
+    DONE["Cerrar tarea"]
+    SN --> STEP
+    STEP --> EXEC
+    EXEC --> FILES
+    FILES --> HANDOFF
+    HANDOFF --> DONE
+
+    classDef serviceNow fill:#075985,stroke:#7DD3FC,color:#FFFFFF,stroke-width:1.5px
+    classDef human fill:#1D4ED8,stroke:#93C5FD,color:#FFFFFF,stroke-width:1.5px
+    classDef execution fill:#6D28D9,stroke:#C4B5FD,color:#FFFFFF,stroke-width:1.5px
+    classDef evidence fill:#B45309,stroke:#FCD34D,color:#FFFFFF,stroke-width:1.5px
+    classDef audit fill:#166534,stroke:#86EFAC,color:#FFFFFF,stroke-width:1.5px
+
+    class SN serviceNow
+    class STEP,HANDOFF human
+    class EXEC,FILES execution
+    class DONE audit
+~~~
+
+#### Etapa 3 · Ejecución en segundo plano activada por API
+
+ServiceNow activa BAS mediante una API. BAS procesa SAP y las evidencias en segundo plano, dejando los resultados disponibles en ServiceNow. Solo entonces la tarea entra en la cola humana para comprobar los archivos generados y cerrarla.
+
+~~~mermaid
+flowchart LR
+    SN["Tarea ServiceNow / WBS"]
+    STEP["ServiceNow llama API de BAS"]
+    EXEC["BAS ejecuta SAP en segundo plano"]
+    FILES["BAS genera y envía evidencias"]
+    HANDOFF["Tarea pasa a auditoría humana"]
+    DONE["Comprobar archivos y cerrar"]
+    SN --> STEP
+    STEP --> EXEC
+    EXEC --> FILES
+    FILES --> HANDOFF
+    HANDOFF --> DONE
+
+    classDef serviceNow fill:#075985,stroke:#7DD3FC,color:#FFFFFF,stroke-width:1.5px
+    classDef human fill:#1D4ED8,stroke:#93C5FD,color:#FFFFFF,stroke-width:1.5px
+    classDef execution fill:#6D28D9,stroke:#C4B5FD,color:#FFFFFF,stroke-width:1.5px
+    classDef evidence fill:#B45309,stroke:#FCD34D,color:#FFFFFF,stroke-width:1.5px
+    classDef audit fill:#166534,stroke:#86EFAC,color:#FFFFFF,stroke-width:1.5px
+
+    class SN serviceNow
+    class STEP,EXEC execution
+    class FILES evidence
+    class HANDOFF,DONE audit
+~~~
+
+**Nota sobre los tiempos:** Los **~3 minutos** de la etapa final corresponden a la verificación humana y al cierre de la tarea. La ejecución por API, el procesamiento SAP y la generación y entrega de evidencias siguen en segundo plano; no se afirma una duración concreta para ese procesamiento.
 ---
 
 ## Flujo de ingeniería asistida por IA
@@ -126,7 +191,7 @@ La interfaz de escritorio está separada de los servicios de aplicación y de la
 Proceso iterativo **orquestado por una persona**: las herramientas de IA ayudan a implementar y revisar; los controles automatizados validan los cambios; la integración exige una decisión humana. No supone comunicación autónoma e irrestricta entre agentes con código privado.
 
 ~~~mermaid
-flowchart TD
+flowchart LR
     REQ["Requisitos y criterios de aceptación"] --> CODE["Agente de implementación: Claude Code / Codex"]
     CODE --> QA["Controles: pruebas, lint, tipos y CI"]
     QA --> REVIEW["Revisión independiente: Codex"]
