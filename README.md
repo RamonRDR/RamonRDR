@@ -90,14 +90,31 @@ Conceptual architecture only. External service connections shown as interface de
 ~~~mermaid
 flowchart LR
     USER["Accounting operations"] --> UI["Flet desktop UI"]
-    UI --> CORE["Application services & orchestration"]
-    CORE --> SAP["SAP ECC"]
+    UI --> CORE["Python application services"]
+    CORE --> ECC["SAP ECC"]
     CORE --> BPC["SAP BPC / EPM"]
-    CORE -. "Interface design" .-> EXT["External services / WBS"]
+    CORE -. "Interface design" .-> SN["ServiceNow"]
+    SN -->|"Orchestrates WBS workflows"| WBS["WBS platform"]
     CORE --> SAFE["Validation, evidence & recovery"]
-    SAP --> SAFE
+    ECC --> SAFE
     BPC --> SAFE
     SAFE --> LOG["Logs & audit evidence"]
+
+    classDef business fill:#1D4ED8,stroke:#93C5FD,color:#FFFFFF,stroke-width:1.5px
+    classDef interface fill:#0F766E,stroke:#99F6E4,color:#FFFFFF,stroke-width:1.5px
+    classDef service fill:#5B21B6,stroke:#C4B5FD,color:#FFFFFF,stroke-width:1.5px
+    classDef sap fill:#C2410C,stroke:#FDBA74,color:#FFFFFF,stroke-width:1.5px
+    classDef external fill:#166534,stroke:#86EFAC,color:#FFFFFF,stroke-width:1.5px
+    classDef safety fill:#9D174D,stroke:#F9A8D4,color:#FFFFFF,stroke-width:1.5px
+    classDef audit fill:#334155,stroke:#CBD5E1,color:#FFFFFF,stroke-width:1.5px
+
+    class USER business
+    class UI interface
+    class CORE service
+    class ECC,BPC sap
+    class SN,WBS external
+    class SAFE safety
+    class LOG audit
 ~~~
 
 The desktop interface is kept separate from application services and SAP integrations. Validation, evidence and recovery are first-class concerns.
@@ -109,14 +126,36 @@ The desktop interface is kept separate from application services and SAP integra
 An iterative, **human-orchestrated** process used in development: AI tools assist with implementation and review, automated checks verify changes, and a person decides when to integrate. This is not a claim of autonomous agents exchanging private code without oversight.
 
 ~~~mermaid
-flowchart LR
-    REQ["Requirements & acceptance criteria"] --> CODE["Implementation: Codex / Claude Code"]
-    CODE --> QA["Tests, type checks & CI"]
-    QA --> REVIEW["Independent AI code review"]
-    REVIEW --> DEC{"Findings?"}
-    DEC -- "Yes" --> CODE
-    DEC -- "No" --> HUMAN["Human validation & merge"]
+flowchart TD
+    REQ["Requirements & acceptance criteria"] --> CODE["Coding agent: Claude Code / Codex"]
+    CODE --> QA["Automated checks: tests, lint, types & CI"]
+    QA --> REVIEW["Independent Codex review"]
+    REVIEW --> DECISION{"Review findings?"}
+    DECISION -->|"Yes"| FEEDBACK["Review feedback & corrections"]
+    FEEDBACK -->|"Updated implementation"| CODE
+    DECISION -->|"No"| HUMAN["Human validation & merge approval"]
+    HUMAN --> MAIN["Main branch"]
+
+    classDef input fill:#1D4ED8,stroke:#93C5FD,color:#FFFFFF,stroke-width:1.5px
+    classDef coding fill:#6D28D9,stroke:#C4B5FD,color:#FFFFFF,stroke-width:1.5px
+    classDef checks fill:#0F766E,stroke:#99F6E4,color:#FFFFFF,stroke-width:1.5px
+    classDef review fill:#B45309,stroke:#FCD34D,color:#FFFFFF,stroke-width:1.5px
+    classDef decision fill:#9F1239,stroke:#FDA4AF,color:#FFFFFF,stroke-width:1.5px
+    classDef feedback fill:#7C3AED,stroke:#DDD6FE,color:#FFFFFF,stroke-width:1.5px
+    classDef human fill:#166534,stroke:#86EFAC,color:#FFFFFF,stroke-width:1.5px
+    classDef main fill:#334155,stroke:#CBD5E1,color:#FFFFFF,stroke-width:1.5px
+
+    class REQ input
+    class CODE coding
+    class QA checks
+    class REVIEW review
+    class DECISION decision
+    class FEEDBACK feedback
+    class HUMAN human
+    class MAIN main
 ~~~
+
+Review findings are routed back to the coding agent for corrections. After each change, automated checks and independent review run again; human approval remains the final gate.
 
 ---
 
